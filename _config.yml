@@ -1,0 +1,211 @@
+# Site
+repository: neidiom/neidiom.github.io
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Nedim Hadzimahmutovic
+title: Senior DevOops (not a senior)
+email: h.nedim@gmail.com
+website: https://github.com/neidiom
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+#twitter_username: facespics
+github_username:  neidiom
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+#instagram_username: jameswgrant
+#linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+#youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's Nedim and I'm a senior DevOps. I have been administrating Linux servers and scripting cloud systems for nearly 20 years.
+
+  I am most skilled in: <mark>Ansible</mark>, <mark>AWS</mark> and <mark>Eating Pizza from Maheer's Bakery Kovaci</mark>
+
+content:
+  - title: Latest Projects
+    layout: list
+    content:
+      - layout: top-middle
+        title: InvestDEFY, HashiCorp Nomad implementation at a Crypto startup
+        quote: >
+          This is probably one of the greatest setups I worked with.
+        description: | # this will include new lines to allow paragraphs
+          This company has their DevOps on another level. They built everything on bare metal servers with run with custom <mark>Ansible</mark> code. They use a central hosts inventory with a logical hosts group setup.
+          Only one playbook file is used for dozens of servers.
+
+          It is easy to run a single role limited to a specific server by using tags and limits. More than 50 custom Ansible roles are being used.
+
+          All services are run from custom Docker images that are built and deployed by the custom Jenkins server. Jenkins is built with the configuration as code plugin. Makefiles are used in combination with Jenkinsfiles.
+
+          My tasks were to:
+          - Refactor the Ansible code,
+          - Introduce staging and production hosts inventory and group vars,
+          - Create HashiCorp Nomad role and deploy data mining services on Nomad,
+          - Create the staging Jenkins server using the configuration as code plugin,
+          - Dockerize many Go services.
+
+      - layout: top-middle
+        title: Loop Platform, AWS horizontal scaling
+        quote: >
+          I had so much fun while working on this project as I could do everything from scratch.
+        description: | # this will include new lines to allow paragraphs
+          This platform is in early stages of development which gave me the ability to test everything out on time while everything was being developed. I was able to request features like the health check endpoint for the API on time.
+          The API was built in <mark>Golang</mark> which works great as a single binary is built during <mark>CodeBuild</mark> and deployed to the server.
+
+          The ENV file is dynamically generated during the build phase and the secrets are being kept in the <mark>AWS Systems Manager Parameter Store</mark>.
+
+          <mark>Cloudinit</mark> was chosen instead of building a custom Linux image for EC2. This way we could have the latest system patches and the latest kernel up and running.
+          Highly recommended technology as YAML is the king when configuring system things such as SSH, users, SSH keys, NginX, Systemd scripts etc.
+
+          Technologies used are <mark>AWS Auto Scaling</mark>, <mark>Terraform</mark>, <mark>AWS CodePipeline</mark>, <mark>Cloud Init</mark>.
+   #
+   #
+   #
+   #       Experience
+   #
+   #
+   #
+   #
+
+  - title: Experience
+    layout: list
+    content:
+
+      - layout: left
+        title: Clearview
+        sub_title: DevOps Engineer
+        caption: 2017 - Present
+        quote: >
+          First remote position in a US IT outsourcing company
+        description: |
+            Manages project infrastructure. Ensures that proper monitoring, logging, backup and other necessary services are in place while proactively searching for opportunities to optimize. Works with bare metal servers as well as cloud vendors (e.g. AWS, Azure and GCP).
+
+      - layout: left
+        title: BAWAG P.S.K.
+        sub_title: DevOps Engineer
+        caption: 2018 - 2021
+        quote: >
+          Helped with the process of moving an Austrian bank to the Cloud
+        description: |
+            Built services which identified, decallocated, and shut down idle Virtual Machines to reduce costs. Involved in implementation of Branch Finder web app based on micro service architecture. Deployed Branch Finder on Azure Kubernetes Service cluster.
+
+      - layout: left
+        title: Inservio d.o.o.
+        sub_title: Linux System Administrator / DevOps Engineer
+        caption: 2009 - 2021
+        quote: >
+          Started as a small web agency and grew into a managed web hosting provider
+        description: |
+            A web agency and managed hosting provider. Infrastructure based on dedicated servers hosted with Hetzner and running Proxmox virtual environment. Services isolated with LXC containers running Debian Linux. Containers are deployed with custom Ansible roles.
+            Worked with high-traffic web portals to set up services and architecture required to seamlessly handle high load traffic. Responsible for setting up bare metal servers and containers. Worked with mail servers and web hosting panels. Managed Wordpress instances by WP-CLI and wrote custom scripting in Ruby.
+
+      - layout: left
+        title: ICITAP Mission in Bosnia, US DOJ
+        sub_title: Linux System Administrator
+        caption: 2006 - 2019
+        quote: >
+          Over the span of 14 years I learned alot about running a regional IT hub
+        description: |
+            Supporting local police agencies and other ICITAP missions by acting as a regional data center and providing email, file sharing, LDAP, VoIP services with our infrastructure based on Dell PowerEdge 720 and 610 servers running on Xen Server virtualisation software.
+
+      - layout: left
+        title: European Union Monitoring Mission in Bosnia
+        sub_title: IT Assistant
+        caption: 2005 - 2006
+        quote: >
+          First experience with IT support and working in a regional organization
+        description: |
+            Regional EUMM mission where I provided IT support locally and remote.
+
+      - layout: left
+        title: Linux User Group of Zenica
+        sub_title: Linux Sys Admin at local community wireless network
+        caption: 2002 - 2005
+        quote: >
+          First experience with remote Linux servers and wireless networks.
+        description: |
+            Being part of this local Linux User Group was the time where I gained my first Linux skills. The local Faculty of Mechanical Engineering was the first sponsor providing us a dedicated server with a static IP address where we run a Web and Mail server.
+            Later we grew and ran the first community wireless network where we experimented with custom iptables firewalls, intranet, split DNS systems and WDS or Wireless Distribution Systems.
+
+
+  - title: A Little More About Me
+    layout: text
+    content: |
+      Alongside my interests in IT some of my other interests and hobbies are:
+      - Traveling as a Digital Nomad
+      - Long walks in the nature
+      - Podcasts
+
+      Location:
+      - <mark>Country:</mark> Bosnia & Herzegovina.
+      - <mark>Homey town:</mark> Zenica.
+      - <mark>Current city:</mark> Sarajevo.
+      - <mark>Current location:</mark> Unknown, ask my mom, she uses Viber only.
+
+  - title: Scripts
+    layout: text
+    content: |
+      These are some of the scripts I wrote that are public.
+
+      Links
+      - [monit2slack](https://github.com/inservio/monit2slack)
+      - [Dockerized SSL certificate notification](https://github.com/neidiom/dockerized_ssl_certificate_expiry_notification)
+      - [Zmcli](https://github.com/inservio/zmcli)
+      - [servermonitor](https://github.com/neidiom/servermonitor)
+
+  - title: Blogs
+    layout: text
+    content: |
+      Some blog posts I have written.
+
+      Links
+      - [Deploying PHP-App-as-a-Container Services in Amazon Lightsail with Github Actions](https://medium.com/geekculture/deploying-php-app-as-a-container-services-in-amazon-lightsail-with-github-actions-edbe68fcb45d)
+      - [Get a Slack notification when your SSL certificate is about to expire](https://dev.to/neidiom/get-a-slack-notification-when-your-ssl-certificate-is-about-to-expire-2c83)
+      - [Getters and Setters in Ruby](https://blog.inservio.ba/getters-and-setters-in-ruby.html)
+      - [How we Deploy with Capistrano](https://blog.inservio.ba/how-we-deploy-with-capistrano.html)
+      - [How To Detect Weak Mail Passwords On Your ISPConfig 3 Server](https://www.howtoforge.com/how-to-detect-weak-mail-passwords-on-your-ispconfig-3-server)
+
+# Footer
+footer_show_references: true
+references_title: References provided on this very page :)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
