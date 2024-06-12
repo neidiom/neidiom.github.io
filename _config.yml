@@ -67,9 +67,8 @@ content:
         quote: >
           I had so much fun while working on this project as I could do everything from scratch.
         description: | # this will include new lines to allow paragraphs
-          This platform has reached production state, and I have been involved from the very beginning.
-          The API was built in <mark>Golang</mark> which works great as a single binary is built during <mark>CodeBuild</mark> and deployed to the AWS AppRunner as a Container.
-          The ENV file is dynamically generated during the build phase and the secrets are being kept in the <mark>AWS Systems Manager Parameter Store</mark>.
+          I helped build this platform from scratch! We used <mark>Golang</mark> for the API, which is great because it creates a single binary that gets deployed as a Docker Container to <mark>AWS AppRunner</mark>.
+          To keep things secure, secrets are stored in <mark>AWS Parameter Store</mark> and settings are loaded automatically during deployment.
           Technologies used are:
           * <mark>Golang</mark> for the API,
           * <mark>React</mark> for the FrontEnd which is deployed to S3 and served by CloudFront.
@@ -78,6 +77,7 @@ content:
           * <mark>AWS CodePipeline</mark> as the CI/CD, 
           * <mark>AWS ParameterStore</mark> as the key-value store
           * <mark>AWS CloudFront</mark> as the CDN solution.
+          
       - layout: top-middle
         title: InvestDEFY, HashiCorp Nomad implementation at a Crypto startup
         quote: >
@@ -89,13 +89,13 @@ content:
 
           It is easy to run a single role limited to a specific server by using tags and limits. More than 50 custom Ansible roles are being used.
 
-          All services are run from custom Docker images that are built and deployed by the custom Jenkins server. Jenkins is built with the configuration as code plugin. Makefiles are used in combination with Jenkinsfiles.
+          All services are run from custom Docker images that are built and deployed by the custom Jenkins server. Jenkins is built with the configuration-as-code plugin. Makefiles are used in combination with Jenkinsfiles.
 
           My tasks were to:
           - Refactor the Ansible code,
           - Introduce staging and production hosts inventory and group vars,
           - Create HashiCorp Nomad role and deploy data mining services on Nomad,
-          - Create the staging Jenkins server using the configuration as code plugin,
+          - Create the staging Jenkins server using the configuration-as-code plugin,
           - Dockerize many Go services.
 
    #
