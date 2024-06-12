@@ -63,12 +63,14 @@ content:
     layout: list
     content:
       - layout: top-middle
-        title: Loop Platform, AWS horizontal scaling
+        title: Loop Platform, GoLang Containers on AWS an
         quote: >
           Working on this project was awesome because I had complete creative control.
-        description: | # this will include new lines to allow paragraphs
+        description: |
           I helped build this platform from scratch! We used <mark>Golang</mark> for the API, which is great because it creates a single binary that gets deployed as a Docker Container to <mark>AWS AppRunner</mark>.
           To keep things secure, secrets are stored in <mark>AWS Parameter Store</mark> and settings are loaded automatically during deployment.
+          I wrote many AWS Lambda scripts for Slack notifications, MySQL backup, Stop/Start services etc.
+          
           Technologies used are:
           * <mark>Golang</mark> for the API,
           * <mark>React</mark> for the FrontEnd which is deployed to S3 and served by CloudFront.
@@ -82,21 +84,22 @@ content:
         title: InvestDEFY, HashiCorp Nomad implementation at a Crypto startup
         quote: >
           This is probably one of the greatest setups I worked with.
-        description: | # this will include new lines to allow paragraphs
-          This company's DevOps is super impressive! Instead of using virtual machines, they built everything on physical servers and manage it all with custom Ansible code. They have a central list of servers organized into groups, and amazingly, they use just one playbook to manage all of them!
+        description: |
+          This company's DevOps is super impressive! Instead of using virtual machines, they built everything on physical servers and manage it all with custom Ansible code. 
+          They have a central list of servers organized into groups, and amazingly, they use just one playbook to manage all of them!
+          Only one playbook file is used for dozens of servers so they rely heavily on tags and groups.
 
-          Only one playbook file is used for dozens of servers.
+          More than 50 custom Ansible roles are being used.
 
-          It is easy to run a single role limited to a specific server by using tags and limits. More than 50 custom Ansible roles are being used.
-
-          All services are run from custom Docker images that are built and deployed by the custom Jenkins server. Jenkins is built with the configuration-as-code plugin. Makefiles are used in combination with Jenkinsfiles.
+          All services are run from custom Docker images that are built and deployed by the custom Jenkins server. Jenkins is built with the configuration-as-code plugin. 
+          Makefiles are used in combination with Jenkinsfiles.
 
           My tasks were to:
           - Refactor the Ansible code,
           - Introduce staging and production hosts inventory and group vars,
           - Create HashiCorp Nomad role and deploy data mining services on Nomad,
           - Create the staging Jenkins server using the configuration-as-code plugin,
-          - Dockerize many Go services.
+          - Dockerize many <mark>Golang</mark> services.
 
    #
    #
