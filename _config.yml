@@ -61,7 +61,8 @@ content:
         quote: >
           This is probably one of the greatest setups I worked with.
         description: | # this will include new lines to allow paragraphs
-          This company has their DevOps on another level. They built everything on bare metal servers with run with custom <mark>Ansible</mark> code. They use a central hosts inventory with a logical hosts group setup.
+          This company's DevOps is super impressive! Instead of using virtual machines, they built everything on physical servers and manage it all with custom Ansible code. They have a central list of servers organized into groups, and amazingly, they use just one playbook to manage all of them!
+
           Only one playbook file is used for dozens of servers.
 
           It is easy to run a single role limited to a specific server by using tags and limits. More than 50 custom Ansible roles are being used.
@@ -80,15 +81,12 @@ content:
         quote: >
           I had so much fun while working on this project as I could do everything from scratch.
         description: | # this will include new lines to allow paragraphs
-          This platform is in the early stages of development which gave me the ability to test everything out on time while everything was being developed. I was able to request features like the health check endpoint for the API on time.
-          The API was built in <mark>Golang</mark> which works great as a single binary is built during <mark>CodeBuild</mark> and deployed to the server.
-
+          This platform has reached production state, and I have been involved from the very beginning.
+          The API was built in <mark>Golang</mark> which works great as a single binary is built during <mark>CodeBuild</mark> and deployed to the AWS AppRunner as a Container.
           The ENV file is dynamically generated during the build phase and the secrets are being kept in the <mark>AWS Systems Manager Parameter Store</mark>.
-
-          <mark>Cloudinit</mark> was chosen instead of building a custom Linux image for EC2. This way we could have the latest system patches and the latest kernel up and running.
-          Highly recommended technology as YAML is the king when configuring system things such as SSH, users, SSH keys, NginX, Systemd scripts, etc.
-
-          Technologies used are <mark>AWS Auto Scaling</mark>, <mark>Terraform</mark>, <mark>AWS CodePipeline</mark>, <mark>Cloud Init</mark>.
+          Technologies used are:
+          * <mark>AWS AppRunner</mark> for hosting Container,
+          * <mark>Terraform</mark>, <mark>AWS CodePipeline</mark>, <mark>Cloud Init</mark>.
    #
    #
    #
