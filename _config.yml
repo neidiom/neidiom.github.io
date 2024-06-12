@@ -80,7 +80,7 @@ content:
         quote: >
           I had so much fun while working on this project as I could do everything from scratch.
         description: | # this will include new lines to allow paragraphs
-          This platform is in early stages of development which gave me the ability to test everything out on time while everything was being developed. I was able to request features like the health check endpoint for the API on time.
+          This platform is in the early stages of development which gave me the ability to test everything out on time while everything was being developed. I was able to request features like the health check endpoint for the API on time.
           The API was built in <mark>Golang</mark> which works great as a single binary is built during <mark>CodeBuild</mark> and deployed to the server.
 
           The ENV file is dynamically generated during the build phase and the secrets are being kept in the <mark>AWS Systems Manager Parameter Store</mark>.
@@ -109,7 +109,7 @@ content:
         quote: >
           First remote position in a US IT outsourcing company
         description: |
-            Manages project infrastructure. Ensures that proper monitoring, logging, backup and other necessary services are in place while proactively searching for opportunities to optimize. Works with bare metal servers as well as cloud vendors (e.g. AWS, Azure and GCP).
+            Manages project infrastructure. Ensures that proper monitoring, logging, backup, and other necessary services are in place while proactively searching for opportunities to optimize. Works with bare metal servers as well as cloud vendors (e.g. AWS, Azure and GCP).
 
       - layout: left
         title: BAWAG P.S.K.
@@ -118,7 +118,7 @@ content:
         quote: >
           Helped with the process of moving an Austrian bank to the Cloud
         description: |
-            Built services which identified, decallocated, and shut down idle Virtual Machines to reduce costs. Involved in implementation of Branch Finder web app based on micro service architecture. Deployed Branch Finder on Azure Kubernetes Service cluster.
+            I built services to identify, de-allocate, and shut down idle virtual machines, reducing costs. I was also involved in implementing the Branch Finder web app using a microservice architecture and deploying it on an Azure Kubernetes Service cluster.
 
       - layout: left
         title: Inservio d.o.o.
@@ -128,14 +128,14 @@ content:
           Started as a small web agency and grew into a managed web hosting provider
         description: |
             A web agency and managed hosting provider. Infrastructure based on dedicated servers hosted with Hetzner and running Proxmox virtual environment. Services isolated with LXC containers running Debian Linux. Containers are deployed with custom Ansible roles.
-            Worked with high-traffic web portals to set up services and architecture required to seamlessly handle high load traffic. Responsible for setting up bare metal servers and containers. Worked with mail servers and web hosting panels. Managed Wordpress instances by WP-CLI and wrote custom scripting in Ruby.
+            Worked with high-traffic web portals to set up services and architecture required to seamlessly handle high-load traffic. Responsible for setting up bare metal servers and containers. Worked with mail servers and web hosting panels. Managed Wordpress instances by WP-CLI and wrote custom scripting in Ruby.
 
       - layout: left
         title: ICITAP Mission in Bosnia, US DOJ
         sub_title: Linux System Administrator
         caption: 2006 - 2019
         quote: >
-          Over the span of 14 years I learned alot about running a regional IT hub
+          For the period of 14 years, I've gained a ton of experience managing a regional HQ."
         description: |
             Supporting local police agencies and other ICITAP missions by acting as a regional data center and providing email, file sharing, LDAP, VoIP services with our infrastructure based on Dell PowerEdge 720 and 610 servers running on Xen Server virtualisation software.
 
