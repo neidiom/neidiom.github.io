@@ -69,7 +69,7 @@ content:
         description: |
           I helped build this platform from scratch! We used <mark>Golang</mark> for the API, which is great because it creates a single binary that gets deployed as a Docker Container to <mark>AWS AppRunner</mark>.
           To keep things secure, secrets are stored in <mark>AWS Parameter Store</mark> and settings are loaded automatically during deployment.
-          I wrote many AWS Lambda scripts for Slack notifications, MySQL backup, Stop/Start services etc.
+          I wrote many AWS Lambda scripts for Slack notifications, MySQL backup, Stop/Start services, etc.
           
           Technologies used are:
           * <mark>Golang</mark> for the API,
@@ -83,9 +83,9 @@ content:
       - layout: top-middle
         title: InvestDEFY, HashiCorp Nomad implementation at a Crypto startup
         quote: >
-          This is probably one of the greatest setups I worked with.
+          This is one of the greatest setups I worked with.
         description: |
-          This company's DevOps is super impressive! Instead of using virtual machines, they built everything on physical servers and manage it all with custom Ansible code. 
+          This company's DevOps is super impressive! Instead of using virtual machines, they built everything on physical servers and managed it all with custom Ansible code. 
           They have a central list of servers organized into groups, and amazingly, they use just one playbook to manage all of them!
           Only one playbook file is used for dozens of servers so they rely heavily on tags and groups.
 
@@ -149,7 +149,7 @@ content:
         quote: >
           For the period of 14 years, I've gained a ton of experience managing a regional HQ.
         description: |
-            Supporting local police agencies and other ICITAP missions by acting as a regional data center and providing email, file sharing, LDAP, VoIP services with our infrastructure based on Dell PowerEdge 720 and 610 servers running on Xen Server virtualisation software.
+            Supporting local police agencies and other ICITAP missions by acting as a regional data center and providing email, file sharing, LDAP, and VoIP services with our infrastructure based on Dell PowerEdge 720 and 610 servers running on Xen Server virtualisation software.
 
       - layout: left
         title: European Union Monitoring Mission in Bosnia
@@ -158,7 +158,7 @@ content:
         quote: >
           First experience with IT support and working in a regional organization
         description: |
-            Regional EUMM mission where I provided IT support locally and remote.
+            Regional EUMM mission where I provided IT support locally and remotely.
 
       - layout: left
         title: Linux User Group of Zenica
@@ -167,14 +167,14 @@ content:
         quote: >
           First experience with remote Linux servers and wireless networks.
         description: |
-            Being part of this local Linux User Group was the time where I gained my first Linux skills. The local Faculty of Mechanical Engineering was the first sponsor providing us a dedicated server with a static IP address where we run a Web and Mail server.
-            Later we grew and ran the first community wireless network where we experimented with custom iptables firewalls, intranet, split DNS systems and WDS or Wireless Distribution Systems.
+            Being part of this local Linux User Group was the time when I gained my first Linux skills. The local Faculty of Mechanical Engineering was the first sponsor providing us with a dedicated server with a static IP address where we run a Web and Mail server.
+            Later we grew and ran the first community wireless network where we experimented with custom iptables firewalls, intranet, split DNS systems, and WDS or Wireless Distribution Systems.
 
 
   - title: A Little More About Me
     layout: text
     content: |
-      Alongside my interests in IT some of my other interests and hobbies are:
+      Alongside my interests in IT, some of my other interests and hobbies are:
       - Traveling as a Digital Nomad
       - Long walks in the nature
       - Podcasts
@@ -206,7 +206,7 @@ content:
       - [Embracing the Future of Cloud Computing](https://blog.clearview.team/embracing-the-future-of-cloud-computing-0d6cd92b9e29)
       - [The Smart Way to Deploy Containers on The Cloud](https://blog.clearview.team/the-easy-and-smart-way-to-deploy-containers-on-the-cloud-say-hello-to-apprunner-d10d332372d1)
       - [Monitor and Control Amazon Cloud Costs with Terraform](https://blog.clearview.team/before-setting-up-your-next-cloud-project-do-not-forget-to-set-the-budgets-and-alerts-ca117b34a9ca)
-      - [Deploying PHP-App-as-a-Container Services in Amazon Lightsail with Github Actions](https://medium.com/geekculture/deploying-php-app-as-a-container-services-in-amazon-lightsail-with-github-actions-edbe68fcb45d)
+      - [Deploying PHP-App-as-a-Container Services in Amazon Lightsail with GitHub Actions](https://medium.com/geekculture/deploying-php-app-as-a-container-services-in-amazon-lightsail-with-github-actions-edbe68fcb45d)
       - [Get a Slack notification when your SSL certificate is about to expire](https://dev.to/neidiom/get-a-slack-notification-when-your-ssl-certificate-is-about-to-expire-2c83)
 #      - [Getters and Setters in Ruby](https://blog.inservio.ba/getters-and-setters-in-ruby.html)
 #      - [How we Deploy with Capistrano](https://blog.inservio.ba/how-we-deploy-with-capistrano.html)
