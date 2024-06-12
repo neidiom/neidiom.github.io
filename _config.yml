@@ -63,7 +63,7 @@ content:
     layout: list
     content:
       - layout: top-middle
-        title: Loop Platform: Audience, and Community Engagement Platform powered by GoLang Containers, React, and run on AWS Cloud
+        title: 'Loop Platform: Audience, and Community Engagement Platform powered by GoLang Containers, React, and run on AWS Cloud'
         quote: >
           Working on this project was awesome because I had complete creative control.
         description: |
