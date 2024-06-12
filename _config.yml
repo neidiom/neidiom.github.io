@@ -117,11 +117,15 @@ content:
       - layout: left
         title: Clearview
         sub_title: DevOps Engineer
-        caption: 2017 - Present
+        caption: 2017 - 2024
         quote: >
           First remote position in a US IT outsourcing company
         description: |
-            Manages project infrastructure. Ensures that proper monitoring, logging, backup, and other necessary services are in place while proactively searching for opportunities to optimize. Works with bare metal servers as well as cloud vendors (e.g. AWS, Azure and GCP).
+            **I'm keeping project infrastructure running smoothly.** This includes monitoring everything, logging activity, backing things up, and making sure all the needed services are available. I'm always on the lookout for ways to improve it too.
+            **I work with all kinds of servers,** from physical ones (bare metal) to cloud-based options like AWS and Google Cloud Platform (GCP).
+            **I team up with the developers** to figure out the best technology for each project. I chat with them and the client to make sure we're all on the same page. Once we have a plan, I help them set everything up correctly and troubleshoot any problems.
+            **Basically, I'm the infrastructure techie, making sure everything runs behind the scenes for the developers.** I use tools like Terraform for the cloud and Ansible for physical servers.
+
 
       - layout: left
         title: BAWAG P.S.K.
