@@ -57,6 +57,22 @@ content:
     layout: list
     content:
       - layout: top-middle
+        title: Loop Platform, AWS horizontal scaling
+        quote: >
+          I had so much fun while working on this project as I could do everything from scratch.
+        description: | # this will include new lines to allow paragraphs
+          This platform has reached production state, and I have been involved from the very beginning.
+          The API was built in <mark>Golang</mark> which works great as a single binary is built during <mark>CodeBuild</mark> and deployed to the AWS AppRunner as a Container.
+          The ENV file is dynamically generated during the build phase and the secrets are being kept in the <mark>AWS Systems Manager Parameter Store</mark>.
+          Technologies used are:
+          * <mark>Golang</mark> for the API,
+          * <mark>React</mark> for the FrontEnd which is deployed to S3 and served by CloudFront.
+          * <mark>AWS AppRunner</mark> for deploying Docker Containers,
+          * <mark>Terraform</mark> as the Infrastructure as Code solution, 
+          * <mark>AWS CodePipeline</mark> as the CI/CD, 
+          * <mark>AWS ParameterStore</mark> as the key-value store
+          * <mark>AWS CloudFront</mark> as the CDN solution.
+      - layout: top-middle
         title: InvestDEFY, HashiCorp Nomad implementation at a Crypto startup
         quote: >
           This is probably one of the greatest setups I worked with.
@@ -76,20 +92,6 @@ content:
           - Create the staging Jenkins server using the configuration as code plugin,
           - Dockerize many Go services.
 
-      - layout: top-middle
-        title: Loop Platform, AWS horizontal scaling
-        quote: >
-          I had so much fun while working on this project as I could do everything from scratch.
-        description: | # this will include new lines to allow paragraphs
-          This platform has reached production state, and I have been involved from the very beginning.
-          The API was built in <mark>Golang</mark> which works great as a single binary is built during <mark>CodeBuild</mark> and deployed to the AWS AppRunner as a Container.
-          The ENV file is dynamically generated during the build phase and the secrets are being kept in the <mark>AWS Systems Manager Parameter Store</mark>.
-          Technologies used are:
-          * <mark>AWS AppRunner</mark> for deploying Docker Containers,
-          * <mark>Terraform</mark> as the Infrastructure as Code solution, 
-          * <mark>AWS CodePipeline</mark> as the CI/CD, 
-          * <mark>AWS ParameterStore</mark> as the key-value store
-          * <mark>AWS CloudFront</mark> as the CDN solution.
    #
    #
    #
