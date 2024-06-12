@@ -197,8 +197,8 @@ content:
       Links
       - [monit2slack](https://github.com/inservio/monit2slack)
       - [Dockerized SSL certificate notification](https://github.com/neidiom/dockerized_ssl_certificate_expiry_notification)
-      - [Zmcli](https://github.com/inservio/zmcli)
-      - [servermonitor](https://github.com/neidiom/servermonitor)
+      #- [Zmcli](https://github.com/inservio/zmcli)
+      #- [servermonitor](https://github.com/neidiom/servermonitor)
 
   - title: Blogs
     layout: text
