@@ -65,7 +65,7 @@ content:
       - layout: top-middle
         title: Loop Platform, AWS horizontal scaling
         quote: >
-          I had so much fun while working on this project as I could do everything from scratch.
+          Working on this project was awesome because I had complete creative control.
         description: | # this will include new lines to allow paragraphs
           I helped build this platform from scratch! We used <mark>Golang</mark> for the API, which is great because it creates a single binary that gets deployed as a Docker Container to <mark>AWS AppRunner</mark>.
           To keep things secure, secrets are stored in <mark>AWS Parameter Store</mark> and settings are loaded automatically during deployment.
