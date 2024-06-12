@@ -63,7 +63,7 @@ content:
     layout: list
     content:
       - layout: top-middle
-        title: Loop Platform, GoLang Containers on AWS an
+        title: Loop Platform: Audience, and Community Engagement Platform powered by GoLang Containers, React, and run on AWS Cloud
         quote: >
           Working on this project was awesome because I had complete creative control.
         description: |
@@ -81,7 +81,7 @@ content:
           * <mark>AWS CloudFront</mark> as the CDN solution.
           
       - layout: top-middle
-        title: InvestDEFY, HashiCorp Nomad implementation at a Crypto startup
+        title: InvestDEFY: Ansible-powered HashiCorp Nomad implementation at a Crypto startup
         quote: >
           This is one of the greatest setups I worked with.
         description: |
