@@ -85,8 +85,11 @@ content:
           The API was built in <mark>Golang</mark> which works great as a single binary is built during <mark>CodeBuild</mark> and deployed to the AWS AppRunner as a Container.
           The ENV file is dynamically generated during the build phase and the secrets are being kept in the <mark>AWS Systems Manager Parameter Store</mark>.
           Technologies used are:
-          * <mark>AWS AppRunner</mark> for hosting Container,
-          * <mark>Terraform</mark>, <mark>AWS CodePipeline</mark>, <mark>Cloud Init</mark>.
+          * <mark>AWS AppRunner</mark> for deploying Docker Containers,
+          * <mark>Terraform</mark> as the Infrastructure as Code solution, 
+          * <mark>AWS CodePipeline</mark> as the CI/CD, 
+          * <mark>AWS ParameterStore</mark> as the key-value store
+          * <mark>AWS CloudFront</mark> as the CDN solution.
    #
    #
    #
