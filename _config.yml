@@ -81,7 +81,7 @@ content:
           * <mark>AWS CloudFront</mark> as the CDN solution.
           
       - layout: top-middle
-        title: InvestDEFY: Ansible-powered HashiCorp Nomad implementation at a Crypto startup
+        title: 'InvestDEFY: Ansible-powered HashiCorp Nomad implementation at a Crypto startup'
         quote: >
           This is one of the greatest setups I worked with.
         description: |
