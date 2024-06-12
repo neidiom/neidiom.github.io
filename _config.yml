@@ -50,7 +50,7 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Nedim and I'm a senior DevOps. I have been administrating Linux servers and scripting cloud systems for nearly 20 years.
 
-  I am most skilled in: <mark>Ansible</mark>, <mark>AWS</mark> and <mark>Eating Pizza from Maheer's Bakery Kovaci</mark>
+  I am most skilled in: <mark>Terraform</mark>, <mark>Ansible</mark>, <mark>AWS</mark> and <mark>Eating Pizza from Maheer's Bakery Kovaci</mark>
 
 content:
   - title: Latest Projects
@@ -86,7 +86,7 @@ content:
           The ENV file is dynamically generated during the build phase and the secrets are being kept in the <mark>AWS Systems Manager Parameter Store</mark>.
 
           <mark>Cloudinit</mark> was chosen instead of building a custom Linux image for EC2. This way we could have the latest system patches and the latest kernel up and running.
-          Highly recommended technology as YAML is the king when configuring system things such as SSH, users, SSH keys, NginX, Systemd scripts etc.
+          Highly recommended technology as YAML is the king when configuring system things such as SSH, users, SSH keys, NginX, Systemd scripts, etc.
 
           Technologies used are <mark>AWS Auto Scaling</mark>, <mark>Terraform</mark>, <mark>AWS CodePipeline</mark>, <mark>Cloud Init</mark>.
    #
