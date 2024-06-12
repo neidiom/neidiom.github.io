@@ -48,8 +48,8 @@ github_username:  neidiom
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Nedim and I'm a senior DevOps. I have been administrating Linux servers and scripting cloud systems for nearly 20 years.
-
+  Hey there! I'm Nedim, a senior DevOps engineer. For almost 20 years, I've been taking care of Linux servers and automating cloud systems with scripts.
+  
   I am most skilled in: <mark>Terraform</mark>, <mark>Ansible</mark>, <mark>AWS</mark> and anything <mark>Linux</mark>.
 
   I love writing scripts in <mark>Ruby</mark> and <mark>Python</mark>.
