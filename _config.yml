@@ -50,7 +50,7 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Nedim and I'm a senior DevOps. I have been administrating Linux servers and scripting cloud systems for nearly 20 years.
 
-  I am most skilled in: <mark>Terraform</mark>, <mark>Ansible</mark>, <mark>AWS</mark> and <mark>Eating Pizza from Maheer's Bakery Kovaci</mark>
+  I am most skilled in: <mark>Terraform</mark>, <mark>Ansible</mark>, <mark>AWS</mark> and anything <mark>Linux</mark>.
 
 content:
   - title: Latest Projects
