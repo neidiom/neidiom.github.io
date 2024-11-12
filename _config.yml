@@ -50,7 +50,7 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Greetings! I'm Nedim, a DevOps engineer with nearly two decades of experience. My expertise lies in Linux server administration and automating cloud systems.
   
-  I am most skilled in: 
+  I am most skilled in the following: 
   * <mark>Terraform</mark>,
   * <mark>Ansible</mark>,
   * <mark>AWS Cloud</mark> and,
@@ -171,7 +171,7 @@ content:
         quote: >
           First experience with remote Linux servers and wireless networks.
         description: |
-            Being part of this local Linux User Group was when I gained my first Linux skills. The local Faculty of Mechanical Engineering was the first sponsor, providing us with a dedicated server with a static IP address on which we run a Web and Mail server.
+            I gained my first Linux skills by being part of this local Linux User Group. The local Faculty of Mechanical Engineering was the first sponsor, providing a dedicated server with a static IP address on which we run a Web and Mail server.
             Later, we grew and ran the first community wireless network, where we experimented with custom IPtables firewalls, an intranet, split DNS systems, and WDS, or Wireless Distribution Systems.
 
 
@@ -182,13 +182,12 @@ content:
       - Traveling 
       - Hiking
       - Podcasts
-      - Learning the old art of saying 'Yes, dear' :)
 
       Location:
       - <mark>Country:</mark> Bosnia & Herzegovina.
       - <mark>Homey town:</mark> Zenica.
       - <mark>Current city:</mark> Sarajevo.
-      - <mark>Current location:</mark> Unknown, ask my mom, she uses Viber only.
+      - <mark>Current location:</mark> Jakarta.
 
   - title: Certification
     layout: text
