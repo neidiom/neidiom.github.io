@@ -208,8 +208,6 @@ content:
     layout: text
     content: |
       Some blog posts I have written.
-
-      Links
       - [The most Flexible AWS Savings Plan](https://towardsaws.com/the-most-flexible-aws-savings-plan-81ee34b777b6)
       - [Embracing the Future of Cloud Computing](https://blog.clearview.team/embracing-the-future-of-cloud-computing-0d6cd92b9e29)
       - [The Smart Way to Deploy Containers on The Cloud](https://blog.clearview.team/the-easy-and-smart-way-to-deploy-containers-on-the-cloud-say-hello-to-apprunner-d10d332372d1)
