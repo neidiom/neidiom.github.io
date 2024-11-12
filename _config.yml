@@ -151,7 +151,7 @@ content:
         sub_title: Linux System Administrator
         caption: 2006 - 2019
         quote: >
-          For the period of 14 years, I've gained a ton of experience managing a regional HQ.
+          For 14 years, I've gained a ton of experience managing a regional HQ.
         description: |
             Supporting local police agencies and other ICITAP missions by acting as a regional data center and providing email, file sharing, LDAP, and VoIP services with our infrastructure based on Dell PowerEdge 720 and 610 servers running on Xen Server virtualisation software.
 
@@ -171,8 +171,8 @@ content:
         quote: >
           First experience with remote Linux servers and wireless networks.
         description: |
-            Being part of this local Linux User Group was the time when I gained my first Linux skills. The local Faculty of Mechanical Engineering was the first sponsor providing us with a dedicated server with a static IP address where we run a Web and Mail server.
-            Later we grew and ran the first community wireless network where we experimented with custom iptables firewalls, intranet, split DNS systems, and WDS or Wireless Distribution Systems.
+            Being part of this local Linux User Group was when I gained my first Linux skills. The local Faculty of Mechanical Engineering was the first sponsor, providing us with a dedicated server with a static IP address on which we run a Web and Mail server.
+            Later, we grew and ran the first community wireless network, where we experimented with custom IPtables firewalls, an intranet, split DNS systems, and WDS, or Wireless Distribution Systems.
 
 
   - title: A Little More About Me
@@ -190,10 +190,17 @@ content:
       - <mark>Current city:</mark> Sarajevo.
       - <mark>Current location:</mark> Unknown, ask my mom, she uses Viber only.
 
+  - title: Certification
+    layout: text
+    content: |
+      Latest certification.
+      Links
+      - [LPI Linux Essentials](https://github.com/neidiom/neidiom.github.io/blob/main/images/LPI_Nedim_Hadzimahmutovic_Linux_Essentials_LE-1.pdf)
+
   - title: Scripts
     layout: text
     content: |
-      These are some of the scripts I wrote that are public.
+      These are some of the public scripts I wrote.
 
       Links
       - [monit2slack](https://github.com/inservio/monit2slack)
