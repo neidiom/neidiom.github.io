@@ -48,7 +48,7 @@ linkedin_username: neidiom
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Greetings! I'm Nedim, a DevOps engineer with nearly two decades of experience. My expertise lies in Linux server administration and automating cloud systems using scripting languages.
+  Greetings! I'm Nedim, a DevOps engineer with nearly two decades of experience. My expertise lies in Linux server administration and automating cloud systems.
   
   I am most skilled in: 
   * <mark>Terraform</mark>,
