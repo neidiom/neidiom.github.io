@@ -193,8 +193,6 @@ content:
   - title: Certification
     layout: text
     content: |
-      Latest certification.
-      Links
       - [LPI Linux Essentials](https://github.com/neidiom/neidiom.github.io/blob/main/images/LPI_Nedim_Hadzimahmutovic_Linux_Essentials_LE-1.pdf)
 
   - title: Scripts
