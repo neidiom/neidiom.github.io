@@ -199,8 +199,6 @@ content:
     layout: text
     content: |
       These are some of the public scripts I wrote.
-
-      Links
       - [monit2slack](https://github.com/inservio/monit2slack)
       - [Dockerized SSL certificate notification](https://github.com/neidiom/dockerized_ssl_certificate_expiry_notification)
 #      - [Zmcli](https://github.com/inservio/zmcli)
