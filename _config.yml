@@ -12,7 +12,7 @@ email: h.nedim@gmail.com
 website: https://github.com/neidiom
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: never
 
 # Social links
 #twitter_username: facespics
