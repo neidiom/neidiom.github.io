@@ -1,3 +1,5 @@
+sass:
+    sass_dir: assets
 # Site
 repository: neidiom/neidiom.github.io
 favicon: images/favicon.ico
@@ -49,8 +51,8 @@ linkedin_username: neidiom
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Greetings! I'm Nedim, a DevOps engineer with nearly two decades of experience. My expertise lies in Linux server administration and automating cloud systems.
-  
-  I am most skilled in the following: 
+
+  I am most skilled in the following:
   * <mark>Terraform</mark>,
   * <mark>Ansible</mark>,
   * <mark>AWS Cloud</mark> and,
@@ -70,28 +72,28 @@ content:
           I helped build this platform from scratch! We used <mark>Golang</mark> for the API, which is great because it creates a single binary that gets deployed as a Docker Container to <mark>AWS AppRunner</mark>.
           To keep things secure, secrets are stored in <mark>AWS Parameter Store</mark> and settings are loaded automatically during deployment.
           I wrote many AWS Lambda scripts for Slack notifications, MySQL backup, Stop/Start services, etc.
-          
+
           Technologies used are:
           * <mark>Golang</mark> for the API,
           * <mark>React</mark> for the FrontEnd which is deployed to S3 and served by CloudFront.
           * <mark>AWS AppRunner</mark> for deploying Docker Containers,
-          * <mark>Terraform</mark> as the Infrastructure as Code solution, 
-          * <mark>AWS CodePipeline</mark> as the CI/CD, 
+          * <mark>Terraform</mark> as the Infrastructure as Code solution,
+          * <mark>AWS CodePipeline</mark> as the CI/CD,
           * <mark>AWS ParameterStore</mark> as the key-value store
           * <mark>AWS CloudFront</mark> as the CDN solution.
-          
+
       - layout: top-middle
         title: 'InvestDEFY: Ansible-powered HashiCorp Nomad implementation at a Crypto startup'
         quote: >
           This is one of the greatest setups I worked with.
         description: |
-          This company's DevOps is super impressive! Instead of using virtual machines, they built everything on physical servers and managed it all with custom Ansible code. 
+          This company's DevOps is super impressive! Instead of using virtual machines, they built everything on physical servers and managed it all with custom Ansible code.
           They have a central list of servers organized into groups, and amazingly, they use just one playbook to manage all of them!
           Only one playbook file is used for dozens of servers so they rely heavily on tags and groups.
 
           More than 50 custom Ansible roles are being used.
 
-          All services are run from custom Docker images that are built and deployed by the custom Jenkins server. Jenkins is built with the configuration-as-code plugin. 
+          All services are run from custom Docker images that are built and deployed by the custom Jenkins server. Jenkins is built with the configuration-as-code plugin.
           Makefiles are used in combination with Jenkinsfiles.
 
           My tasks were to:
@@ -179,7 +181,7 @@ content:
     layout: text
     content: |
       Alongside my interests in IT, some of my other interests and hobbies are:
-      - Traveling 
+      - Traveling
       - Hiking
       - Podcasts
 
