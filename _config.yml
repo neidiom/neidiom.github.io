@@ -208,16 +208,9 @@ content:
   - title: Blogs
     layout: text
     content: |
-      Some blog posts I have written.
-      - [The most Flexible AWS Savings Plan](https://towardsaws.com/the-most-flexible-aws-savings-plan-81ee34b777b6)
-      - [Embracing the Future of Cloud Computing](https://blog.clearview.team/embracing-the-future-of-cloud-computing-0d6cd92b9e29)
-      - [The Smart Way to Deploy Containers on The Cloud](https://blog.clearview.team/the-easy-and-smart-way-to-deploy-containers-on-the-cloud-say-hello-to-apprunner-d10d332372d1)
-      - [Monitor and Control Amazon Cloud Costs with Terraform](https://blog.clearview.team/before-setting-up-your-next-cloud-project-do-not-forget-to-set-the-budgets-and-alerts-ca117b34a9ca)
-      - [Deploying PHP-App-as-a-Container Services in Amazon Lightsail with GitHub Actions](https://medium.com/geekculture/deploying-php-app-as-a-container-services-in-amazon-lightsail-with-github-actions-edbe68fcb45d)
-      - [Get a Slack notification when your SSL certificate is about to expire](https://dev.to/neidiom/get-a-slack-notification-when-your-ssl-certificate-is-about-to-expire-2c83)
-#      - [Getters and Setters in Ruby](https://blog.inservio.ba/getters-and-setters-in-ruby.html)
-#      - [How we Deploy with Capistrano](https://blog.inservio.ba/how-we-deploy-with-capistrano.html)
-#      - [How To Detect Weak Mail Passwords On Your ISPConfig 3 Server](https://www.howtoforge.com/how-to-detect-weak-mail-passwords-on-your-ispconfig-3-server)
+      A compilation of my AWS-related blog articles compiled into an e-book can be downloaded for free.
+      - * [***Read About AWS While Your Coffee Brews***](https://nedtechie.gumroad.com/l/Read_About_AWS_While_Your_Coffee_Brews)
+
 
 # Footer
 footer_show_references: true
