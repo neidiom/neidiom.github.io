@@ -205,7 +205,7 @@ content:
 #      - [Zmcli](https://github.com/inservio/zmcli)
 #      - [servermonitor](https://github.com/neidiom/servermonitor)
 
-  - title: Blogs
+  - title: Publications
     layout: text
     content: |
       A compilation of my AWS-related blog articles compiled into an e-book can be downloaded for free. 
