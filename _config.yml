@@ -196,6 +196,8 @@ content:
     content: |
       - [AWS Certified Cloud Practitioner](https://www.credly.com/badges/3ea2d9b2-538e-448c-a923-f2c11afcbbf8)
       - [LPI Linux Essentials](https://www.credly.com/badges/d316ae48-fb20-4014-8b5c-9d1845edd90c)
+      * [![LPI Linux Essentials](./images/lpi_essentials.png "LPI Linux Essentials")](https://www.credly.com/badges/d316ae48-fb20-4014-8b5c-9d1845edd90c)
+
 
   - title: Scripts
     layout: text
