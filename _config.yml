@@ -58,7 +58,9 @@ about_content: | # this will include new lines to allow paragraphs
   * <mark>AWS Cloud</mark> and,
   * anything <mark>Linux</mark>.
 
-  I love writing scripts in <mark>Ruby</mark> and <mark>Python</mark>. I recently started the IT certification, for more info visit my [Credly Profile](https://www.credly.com/users/nedim-hadzimahmutovic).
+  I love writing scripts in <mark>Ruby</mark> and <mark>Python</mark>. 
+  
+  * I recently started the IT certification, for more info visit my [Credly Profile](https://www.credly.com/users/nedim-hadzimahmutovic).
 
 content:
   - title: Latest Projects
@@ -146,7 +148,7 @@ content:
           Started as a small web agency and grew into a managed web hosting provider
         description: |
             A web agency and managed hosting provider. Infrastructure is based on dedicated servers hosted with Hetzner that run a Proxmox virtual environment. Services isolated with LXC containers running Debian Linux. Containers are deployed with custom Ansible roles.
-            Worked with high-traffic web portals to set up services and architecture required to seamlessly handle high-load traffic. Responsible for setting up bare metal servers and containers. Worked with mail servers and web hosting panels. Managed Wordpress instances by WP-CLI and wrote custom scripting in Ruby.
+            Worked with high-traffic web portals to set up services and architecture required to seamlessly handle high-load traffic. Responsible for setting up bare metal servers and containers. Worked with mail servers and web hosting panels. Managed WordPress instances by WP-CLI and wrote custom scripting in Ruby.
 
       - layout: left
         title: ICITAP Mission in Bosnia, US DOJ
@@ -155,7 +157,7 @@ content:
         quote: >
           For 14 years, I've gained a ton of experience managing a regional HQ.
         description: |
-            Supporting local police agencies and other ICITAP missions by acting as a regional data center and providing email, file sharing, LDAP, and VoIP services with our infrastructure based on Dell PowerEdge 720 and 610 servers running on Xen Server virtualisation software.
+            Supporting local police agencies and other ICITAP missions by acting as a regional data center and providing email, file sharing, LDAP, and VoIP services with our infrastructure based on Dell PowerEdge 720 and 610 servers running on Xen Server virtualization software.
 
       - layout: left
         title: European Union Monitoring Mission in Bosnia
