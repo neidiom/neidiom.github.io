@@ -2,4 +2,260 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import 'modern-resume-theme';
+@import "modern-resume-theme";
+@import "base";
+@import "button";
+@import "type";
+@import "dark";
+@import "icons";
+
+// Header adjustments
+.header-right p {
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+    color: #6c757d; // Tabler's muted color
+}
+
+.header-right a {
+    color: var(--primary-color);
+    font-weight: 500; // Slightly reduced font weight
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: color-mix(in srgb, var(--primary-color) 90%, black);
+    }
+}
+
+@media screen and (max-width: 48em) {
+    //767px
+    .header-container div {
+        text-align: center;
+    }
+
+    .header-right p {
+        text-align: center;
+    }
+
+    .header-left {
+        margin-top: 0;
+    }
+}
+
+// Profile image styling
+.profile-img {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.08);
+    transition:
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+    border: 0.3rem solid var(--background-color); // Add a subtle border
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.15); // Slightly stronger shadow on hover
+    }
+}
+
+.list-container {
+    h3 {
+        margin-bottom: 0.25rem;
+        font-size: 1.5rem; // Slightly smaller heading
+        font-weight: 500;
+    }
+}
+
+.border-weak {
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); // More subtle border
+}
+
+// Layout styling
+.layout {
+    margin-top: 2rem; // Further reduced margin
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        vertical-align: middle;
+        font-size: 1.1rem; // Smaller font size
+
+        p {
+            margin-bottom: 0.15rem; // Further reduced margin
+            font-size: 1rem; // Even smaller font size
+            text-align: inherit;
+            font-weight: 300;
+            line-height: 1.4; // Adjusted line height
+            color: #6c757d; // Tabler's muted color
+
+            b {
+                font-weight: 500;
+                color: #495057;
+            }
+        }
+
+        @media screen and (max-width: 48em) {
+            //767px
+            text-align: center !important;
+
+            p {
+                text-align: center !important;
+            }
+        }
+
+        a {
+            color: var(--secondary-color);
+            font-weight: 400;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: color-mix(in srgb, var(--secondary-color) 90%, black);
+            }
+        }
+
+        i[class^="ti ti-"] {
+            font-size: 1rem; // Smaller icon size
+            margin-right: 0.3rem; // Adjusted spacing
+            color: var(--primary-color);
+            display: inline-block; // ensure proper spacing
+            width: 1rem; // fix icon width
+            text-align: center; // center icon
+        }
+
+        .link {
+            font-size: 0.85rem; // Even smaller link size
+        }
+
+        h4 {
+            margin-bottom: 0.05rem;
+            font-weight: 500;
+            font-size: 1.1rem; // Smaller heading
+            color: #495057; // Tabler's color
+
+            @media print {
+                margin-bottom: 0.1rem;
+            }
+
+            a {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.layout-right {
+    flex-direction: row-reverse;
+}
+
+.layout-right,
+.layout-top-right {
+    .details {
+        text-align: right;
+    }
+}
+
+.layout-left,
+.layout-right {
+    @media screen and (max-width: 48em) {
+        //767px
+        flex-direction: column;
+    }
+
+    .details {
+        margin-bottom: 1.5rem; // Reduced margin
+    }
+}
+
+.layout-top-middle,
+.layout-top,
+.layout-top-right {
+    flex-direction: column;
+
+    .details,
+    .content {
+        width: 100%;
+    }
+}
+
+.layout-top-middle {
+    .details {
+        text-align: center;
+    }
+}
+
+// Footer styling
+.footer-container {
+    margin-top: 4rem; // Reduced margin
+}
+
+.footer-container p {
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    color: #868e96; // Tabler's footer color
+}
+
+.footer-container a {
+    color: var(--secondary-color);
+    font-style: normal; // Remove Italic from links
+    font-weight: 400; // Adjust font weight
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: color-mix(in srgb, var(--secondary-color) 90%, black);
+    }
+}
+
+.page-content {
+    padding: 0;
+}
+
+// Contact links
+.contact a {
+    line-height: 2.2rem; // Adjust line height
+    margin-left: 1.2rem; // Reduce left margin
+    color: #6c757d; // Tabler's muted color
+    transition:
+        color 0.4s ease,
+        transform 0.3s ease;
+    display: inline-flex; // Use flexbox for better alignment
+    align-items: center; // Vertically center the icon and text
+
+    &:hover {
+        color: var(--primary-color);
+        transform: translateY(-1px); // Reduced translate
+    }
+}
+
+// Quote styling
+p.quote {
+    font-size: 0.9rem; // Reduced font size
+    font-style: italic;
+    padding: 0.5rem 1.2rem; // Reduced padding
+    text-align: center;
+    color: #6c757d; // Tabler's muted color
+    border-left: 0.1rem solid var(--accent-color); // Add a subtle accent color
+
+    @media print {
+        text-align: left;
+        padding: 0rem 0.5rem; // Reduced padding
+        margin-top: 0.5rem; // Reduced margin
+    }
+}
+
+// Futuristic body styling
+body {
+    background: #fff; // Pure white background
+    font-family: "Roboto", sans-serif; // Updated font to match Tabler
+    color: #495057; // Updated text color
+}
