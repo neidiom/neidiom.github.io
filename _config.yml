@@ -58,7 +58,7 @@ about_content: | # this will include new lines to allow paragraphs
   * <mark>AWS Cloud</mark> and,
   * anything <mark>Linux</mark>.
 
-  I love writing scripts in <mark>Ruby</mark> and <mark>Python</mark>.
+  I love writing scripts in <mark>Ruby</mark> and <mark>Python</mark>. I recently started the IT certification, for more info visit my [Credly Profile](https://www.credly.com/users/nedim-hadzimahmutovic).
 
 content:
   - title: Latest Projects
@@ -145,7 +145,7 @@ content:
         quote: >
           Started as a small web agency and grew into a managed web hosting provider
         description: |
-            A web agency and managed hosting provider. Infrastructure based on dedicated servers hosted with Hetzner and running Proxmox virtual environment. Services isolated with LXC containers running Debian Linux. Containers are deployed with custom Ansible roles.
+            A web agency and managed hosting provider. Infrastructure is based on dedicated servers hosted with Hetzner that run a Proxmox virtual environment. Services isolated with LXC containers running Debian Linux. Containers are deployed with custom Ansible roles.
             Worked with high-traffic web portals to set up services and architecture required to seamlessly handle high-load traffic. Responsible for setting up bare metal servers and containers. Worked with mail servers and web hosting panels. Managed Wordpress instances by WP-CLI and wrote custom scripting in Ruby.
 
       - layout: left
@@ -194,6 +194,7 @@ content:
   - title: Certification
     layout: text
     content: |
+      - [AWS Certified Cloud Practitioner](https://www.credly.com/users/nedim-hadzimahmutovic)
       - [LPI Linux Essentials](https://github.com/neidiom/neidiom.github.io/blob/main/images/LPI_Nedim_Hadzimahmutovic_Linux_Essentials_LE-1.pdf)
 
   - title: Scripts
@@ -213,7 +214,7 @@ content:
       * [![Read About AWS While Your Coffee Brews](./images/cover_book_Read-About-AWS-While-Your-Coffee-Brews_small.jpg "Read About AWS While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Read_About_AWS_While_Your_Coffee_Brews)
       
       #### Master Linux Permissions and File Types While Your Coffee Brews
-      This book covers the basics of Linux security such as file types, file ownership, and file permissions.
+      This book covers Linux security basics such as file types, file ownership, and file permissions.
       * [![Master Linux Permissions and File Types While Your Coffee Brews](./images/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Master_Linux_Permissions_While_Your_Coffee_Brews)
 
 
