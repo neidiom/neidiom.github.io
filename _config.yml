@@ -220,6 +220,12 @@ content:
       This book covers Linux security basics such as file types, file ownership, and file permissions.
       * [![Master Linux Permissions and File Types While Your Coffee Brews](./images/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Master_Linux_Permissions_While_Your_Coffee_Brews)
 
+  - title: Publications
+    layout: text
+    content: |
+      [![Read About AWS While Your Coffee Brews](./images/cover_book_Read-About-AWS-While-Your-Coffee-Brews_small.jpg "Read About AWS While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Read_About_AWS_While_Your_Coffee_Brews)
+      [![Master Linux Permissions and File Types While Your Coffee Brews](./images/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Master_Linux_Permissions_While_Your_Coffee_Brews)
+
 
 # Footer
 footer_show_references: true
