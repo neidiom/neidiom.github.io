@@ -196,14 +196,14 @@ content:
   - title: Certification
     layout: text
     content: |
-      [![AWS Certified Cloud Practitioner](./images/aws_certified_cloud_practitioner.png "AWS Certified Cloud Practitioner")](https://www.credly.com/badges/3ea2d9b2-538e-448c-a923-f2c11afcbbf8)
-      [![LPI Linux Essentials](./images/lpi_essentials.png "LPI Linux Essentials")](https://www.credly.com/badges/d316ae48-fb20-4014-8b5c-9d1845edd90c)
+      [![AWS Certified Cloud Practitioner](./images/certificates/aws_certified_cloud_practitioner.png "AWS Certified Cloud Practitioner")](https://www.credly.com/badges/3ea2d9b2-538e-448c-a923-f2c11afcbbf8)
+      [![LPI Linux Essentials](./images/certificates/lpi_essentials.png "LPI Linux Essentials")](https://www.credly.com/badges/d316ae48-fb20-4014-8b5c-9d1845edd90c)
 
   - title: Publications
     layout: text
     content: |
-      [![Read About AWS While Your Coffee Brews](./images/cover_book_Read-About-AWS-While-Your-Coffee-Brews_small.jpg "Read About AWS While Your Coffee Brews")](https://github.com/neidiom/Read-About-AWS-While-Your-Coffee-Brews)
-      [![Master Linux Permissions and File Types While Your Coffee Brews](./images/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Master_Linux_Permissions_While_Your_Coffee_Brews)
+      [![Read About AWS While Your Coffee Brews](./images/publications/cover_book_Read-About-AWS-While-Your-Coffee-Brews_small.jpg "Read About AWS While Your Coffee Brews")](https://github.com/neidiom/Read-About-AWS-While-Your-Coffee-Brews)
+      [![Master Linux Permissions and File Types While Your Coffee Brews](./images/publications/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Master_Linux_Permissions_While_Your_Coffee_Brews)
 
   - title: Scripts
     layout: text
