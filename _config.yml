@@ -128,6 +128,7 @@ content:
             *   Managed a diverse range of servers, including bare metal 🖥️, <mark>AWS</mark> ☁️, and <mark>Google Cloud Platform (GCP)</mark>.
             *   Collaborated with development teams to define optimal technology stacks and resolve infrastructure challenges.
             *   Utilized <mark>Terraform</mark> for cloud automation and <mark>Ansible</mark> for bare-metal server configuration.
+            *   Used <mark>cloud-init</mark> for bootstrapping and configuring <mark>AWS EC2</mark> instances.
 
       - layout: left
         title: BAWAG P.S.K.
