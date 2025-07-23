@@ -71,39 +71,38 @@ content:
         quote: >
           Working on this project was awesome because I had complete creative control.
         description: |
-          I helped build this platform from scratch! We used <mark>Golang</mark> for the API, which is great because it creates a single binary that gets deployed as a Docker Container to <mark>AWS AppRunner</mark>.
-          Secrets are stored in <mark>AWS Parameter Store</mark> and settings are loaded automatically during deployment to keep things secure.
-          I wrote many AWS Lambda scripts for Slack notifications, MySQL backup, Stop/Start services, etc.
+          Contributed to building a full-stack platform from the ground up. My responsibilities included:
+          *   Developing the backend API with <mark>Golang</mark>, packaged in a <mark>Docker</mark> container.
+          *   Building the frontend with <mark>React</mark>.
+          *   Automating infrastructure provisioning using <mark>Terraform</mark>.
+          *   Implementing CI/CD pipelines with <mark>AWS CodePipeline</mark> to deploy the API to <mark>AWS AppRunner</mark> and the frontend to <mark>S3</mark>/<mark>CloudFront</mark>.
+          *   Managing application secrets securely with <mark>AWS Parameter Store</mark>.
+          *   Authoring various <mark>AWS Lambda</mark> functions for automation (e.g., Slack notifications, MySQL backups, service management).
 
-          Technologies used are:
-          * <mark>Golang</mark> for the API,
-          * <mark>React</mark> for the FrontEnd which is deployed to S3 and served by CloudFront.
-          * <mark>AWS AppRunner</mark> for deploying Docker Containers,
-          * <mark>Terraform</mark> as the Infrastructure as Code solution,
-          * <mark>AWS CodePipeline</mark> as the CI/CD,
-          * <mark>AWS ParameterStore</mark> as the key-value store
-          * <mark>AWS CloudFront</mark> as the CDN solution.
+          **Tech Summary:**
+          *   **Languages:** <mark>Golang</mark>
+          *   **Frontend:** <mark>React</mark>
+          *   **Cloud Provider:** <mark>AWS</mark>
+          *   **AWS Services:** <mark>AppRunner</mark>, <mark>CodePipeline</mark>, <mark>S3</mark>, <mark>CloudFront</mark>, <mark>Parameter Store</mark>, <mark>Lambda</mark>
+          *   **Tools:** <mark>Docker</mark>, <mark>Terraform</mark>
 
       - layout: top-middle
         title: 'InvestDEFY: Ansible-powered HashiCorp Nomad implementation at a Crypto startup'
         quote: >
           This is one of the greatest setups I worked with.
         description: |
-          This company's DevOps is super impressive! Instead of using virtual machines, they built everything on physical servers and managed it with custom Ansible code.
-          They have a central list of servers organized into groups, and amazingly, they use just one playbook to manage all of them!
-          Only one playbook file is used for dozens of servers so they rely heavily on tags and groups.
+          Managed and enhanced a sophisticated DevOps environment running on physical (bare metal) servers. Key contributions include:
+          *   Refactoring a large, single-playbook <mark>Ansible</mark> codebase with over 50 custom roles, introducing separate inventories for staging and production environments.
+          *   Developing a new <mark>Ansible</mark> role to deploy data mining services onto a <mark>HashiCorp Nomad</mark> cluster.
+          *   Containerizing multiple <mark>Golang</mark> services using <mark>Docker</mark>.
+          *   Building a staging <mark>Jenkins</mark> server using the configuration-as-code plugin, integrating with <mark>Makefiles</mark> and <mark>Jenkinsfiles</mark> for CI/CD.
 
-          More than 50 custom Ansible roles are being used.
-
-          All services are run from custom Docker images that are built and deployed by the custom Jenkins server. Jenkins is built with the configuration-as-code plugin.
-          Makefiles are used in combination with Jenkinsfiles.
-
-          My tasks were to:
-          - Refactor the Ansible code,
-          - Introduce staging and production hosts inventory and group vars,
-          - Create HashiCorp Nomad role and deploy data mining services on Nomad,
-          - Create the staging Jenkins server using the configuration-as-code plugin,
-          - Dockerize many <mark>Golang</mark> services.
+          **Tech Summary:**
+          *   **Languages:** <mark>Golang</mark>
+          *   **Config Management:** <mark>Ansible</mark>
+          *   **CI/CD:** <mark>Jenkins</mark> (with config-as-code), <mark>Makefiles</mark>, <mark>Jenkinsfiles</mark>
+          *   **Containerization:** <mark>Docker</mark>, <mark>HashiCorp Nomad</mark>
+          *   **Infrastructure:** Physical Servers
 
    #
    #
@@ -125,11 +124,10 @@ content:
         quote: >
           First remote position in a US IT outsourcing company
         description: |
-            **I'm keeping project infrastructure running smoothly.** This includes monitoring everything, logging activity, backing things up, and making sure all the needed services are available. I'm always on the lookout for ways to improve it too.
-            **I work with all kinds of servers,** from physical ones (bare metal) to cloud-based options like AWS and Google Cloud Platform (GCP).
-            **I team up with the developers** to figure out the best technology for each project. I chat with them and the client to make sure we're all on the same page. Once we have a plan, I help them set everything up correctly and troubleshoot any problems.
-            **Basically, I'm the infrastructure techie, making sure everything runs behind the scenes for the developers.** I use tools like Terraform for the cloud and Ansible for physical servers.
-
+            *   Proactively maintained and improved project infrastructure, focusing on monitoring, logging, and backup solutions.
+            *   Managed a diverse range of servers, including bare metal, <mark>AWS</mark>, and <mark>Google Cloud Platform (GCP)</mark>.
+            *   Collaborated with development teams to define optimal technology stacks and resolve infrastructure challenges.
+            *   Utilized <mark>Terraform</mark> for cloud automation and <mark>Ansible</mark> for bare-metal server configuration.
 
       - layout: left
         title: BAWAG P.S.K.
@@ -138,7 +136,9 @@ content:
         quote: >
           Helped with the process of moving an Austrian bank to the Cloud
         description: |
-            I built services to identify, de-allocate, and shut down idle virtual machines, reducing costs. I was also involved in implementing the Branch Finder web app using a microservice architecture and deploying it on an Azure Kubernetes Service cluster.
+            *   Engineered and implemented cost-saving services to automatically de-allocate and shut down idle virtual machines.
+            *   Contributed to the development of a microservices-based web application.
+            *   Deployed the application to a production <mark>Azure Kubernetes Service (AKS)</mark> cluster.
 
       - layout: left
         title: Inservio d.o.o.
@@ -147,8 +147,10 @@ content:
         quote: >
           Started as a small web agency and grew into a managed web hosting provider
         description: |
-            A web agency and managed hosting provider. Infrastructure is based on dedicated servers hosted with Hetzner that run a Proxmox virtual environment. Services isolated with LXC containers running Debian Linux. Containers are deployed with custom Ansible roles.
-            Worked with high-traffic web portals to set up services and architecture required to seamlessly handle high-load traffic. Responsible for setting up bare metal servers and containers. Worked with mail servers and web hosting panels. Managed WordPress instances by WP-CLI and wrote custom scripting in Ruby.
+            *   Administered a managed web hosting environment on <mark>Hetzner</mark> dedicated servers running <mark>Proxmox VE</mark>.
+            *   Isolated services using <mark>LXC containers</mark> with <mark>Debian Linux</mark>, deployed and configured with custom <mark>Ansible</mark> roles.
+            *   Architected and supported solutions for high-traffic web portals.
+            *   Managed <mark>WordPress</mark> instances via <mark>WP-CLI</mark> and developed custom automation scripts in <mark>Ruby</mark>.
 
       - layout: left
         title: ICITAP Mission in Bosnia, US DOJ
@@ -157,7 +159,8 @@ content:
         quote: >
           For 14 years, I've gained a ton of experience managing a regional HQ.
         description: |
-            Supporting local police agencies and other ICITAP missions by acting as a regional data center and providing email, file sharing, LDAP, and VoIP services with our infrastructure based on Dell PowerEdge 720 and 610 servers running on Xen Server virtualization software.
+            *   Administered a regional data center providing critical services including email, file sharing, LDAP, and VoIP.
+            *   Managed an infrastructure based on <mark>Dell PowerEdge</mark> servers and <mark>Xen Server</mark> virtualization.
 
       - layout: left
         title: European Union Monitoring Mission in Bosnia
@@ -166,7 +169,7 @@ content:
         quote: >
           First experience with IT support and working in a regional organization
         description: |
-            I used to support the EUMM mission by providing IT assistance both in the region and remotely.
+            Provided essential IT support for the EUMM mission, delivering both on-site and remote assistance across the region.
 
       - layout: left
         title: Linux User Group of Zenica
@@ -175,8 +178,8 @@ content:
         quote: >
           First experience with remote Linux servers and wireless networks.
         description: |
-            I gained my first Linux skills by being part of this local Linux User Group. The local Faculty of Mechanical Engineering was the first sponsor, providing a dedicated server with a static IP address on which we run a Web and Mail server.
-            Later, we grew and ran the first community wireless network, where we experimented with custom IPtables firewalls, an intranet, split DNS systems, and WDS, or Wireless Distribution Systems.
+            *   Gained foundational Linux system administration skills by co-managing a community web and mail server.
+            *   Pioneered one of the first local community wireless networks, experimenting with <mark>IPtables</mark>, split DNS, and <mark>WDS</mark>.
 
 
   - title: A Little More About Me
