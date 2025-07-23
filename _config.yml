@@ -50,20 +50,20 @@ linkedin_username: neidiom
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Greetings! I'm Nedim, a DevOps engineer with nearly two decades of experience. My expertise lies in Linux server administration and automating cloud systems.
+  Greetings! 👋 I'm Nedim, a DevOps engineer with nearly two decades of experience. My expertise lies in Linux server administration and automating cloud systems.
 
   I am most skilled in the following:
-  * <mark>Terraform</mark>,
-  * <mark>Ansible</mark>,
-  * <mark>AWS Cloud</mark> and,
-  * anything <mark>Linux</mark>.
+  *  Terraform  Terraform,
+  * Ansible 📜,
+  * AWS Cloud ☁️ and,
+  * anything Linux 🐧.
 
-  I love writing scripts in <mark>Ruby</mark> and <mark>Python</mark>.
+  I love writing scripts in Ruby 💎 and Python 🐍.
 
   I recently started the IT certification path, for more info visit [![Credly Profile](./images/credly.png "Credly Profile")](https://www.credly.com/users/nedim-hadzimahmutovic).
 
 content:
-  - title: Latest Projects
+  - title: 🚀 Latest Projects
     layout: list
     content:
       - layout: top-middle
@@ -80,11 +80,11 @@ content:
           *   Authoring various <mark>AWS Lambda</mark> functions for automation (e.g., Slack notifications, MySQL backups, service management).
 
           **Tech Summary:**
-          *   **Languages:** <mark>Golang</mark>
-          *   **Frontend:** <mark>React</mark>
-          *   **Cloud Provider:** <mark>AWS</mark>
+          *   **Languages:** <mark>Golang</mark> 🐹
+          *   **Frontend:** <mark>React</mark> ⚛️
+          *   **Cloud Provider:** <mark>AWS</mark> ☁️
           *   **AWS Services:** <mark>AppRunner</mark>, <mark>CodePipeline</mark>, <mark>S3</mark>, <mark>CloudFront</mark>, <mark>Parameter Store</mark>, <mark>Lambda</mark>
-          *   **Tools:** <mark>Docker</mark>, <mark>Terraform</mark>
+          *   **Tools:** <mark>Docker</mark> 🐳, <mark>Terraform</mark>  Terraform
 
       - layout: top-middle
         title: 'InvestDEFY: Ansible-powered HashiCorp Nomad implementation at a Crypto startup'
@@ -98,11 +98,11 @@ content:
           *   Building a staging <mark>Jenkins</mark> server using the configuration-as-code plugin, integrating with <mark>Makefiles</mark> and <mark>Jenkinsfiles</mark> for CI/CD.
 
           **Tech Summary:**
-          *   **Languages:** <mark>Golang</mark>
-          *   **Config Management:** <mark>Ansible</mark>
-          *   **CI/CD:** <mark>Jenkins</mark> (with config-as-code), <mark>Makefiles</mark>, <mark>Jenkinsfiles</mark>
-          *   **Containerization:** <mark>Docker</mark>, <mark>HashiCorp Nomad</mark>
-          *   **Infrastructure:** Physical Servers
+          *   **Languages:** <mark>Golang</mark> 🐹
+          *   **Config Management:** <mark>Ansible</mark> 📜
+          *   **CI/CD:** <mark>Jenkins</mark> 🤵 (with config-as-code), <mark>Makefiles</mark>, <mark>Jenkinsfiles</mark>
+          *   **Containerization:** <mark>Docker</mark> 🐳, <mark>HashiCorp Nomad</mark> 🗺️
+          *   **Infrastructure:** Physical Servers 🖥️
 
    #
    #
@@ -113,7 +113,7 @@ content:
    #
    #
 
-  - title: Experience
+  - title: 💼 Experience
     layout: list
     content:
 
@@ -125,7 +125,7 @@ content:
           First remote position in a US IT outsourcing company
         description: |
             *   Proactively maintained and improved project infrastructure, focusing on monitoring, logging, and backup solutions.
-            *   Managed a diverse range of servers, including bare metal, <mark>AWS</mark>, and <mark>Google Cloud Platform (GCP)</mark>.
+            *   Managed a diverse range of servers, including bare metal 🖥️, <mark>AWS</mark> ☁️, and <mark>Google Cloud Platform (GCP)</mark>.
             *   Collaborated with development teams to define optimal technology stacks and resolve infrastructure challenges.
             *   Utilized <mark>Terraform</mark> for cloud automation and <mark>Ansible</mark> for bare-metal server configuration.
 
@@ -138,7 +138,7 @@ content:
         description: |
             *   Engineered and implemented cost-saving services to automatically de-allocate and shut down idle virtual machines.
             *   Contributed to the development of a microservices-based web application.
-            *   Deployed the application to a production <mark>Azure Kubernetes Service (AKS)</mark> cluster.
+            *   Deployed the application to a production <mark>Azure Kubernetes Service (AKS)</mark> cluster ☸️.
 
       - layout: left
         title: Inservio d.o.o.
@@ -150,7 +150,7 @@ content:
             *   Administered a managed web hosting environment on <mark>Hetzner</mark> dedicated servers running <mark>Proxmox VE</mark>.
             *   Isolated services using <mark>LXC containers</mark> with <mark>Debian Linux</mark>, deployed and configured with custom <mark>Ansible</mark> roles.
             *   Architected and supported solutions for high-traffic web portals.
-            *   Managed <mark>WordPress</mark> instances via <mark>WP-CLI</mark> and developed custom automation scripts in <mark>Ruby</mark>.
+            *   Managed <mark>WordPress</mark> instances via <mark>WP-CLI</mark> and developed custom automation scripts in <mark>Ruby</mark> 💎.
 
       - layout: left
         title: ICITAP Mission in Bosnia, US DOJ
@@ -159,7 +159,7 @@ content:
         quote: >
           For 14 years, I've gained a ton of experience managing a regional HQ.
         description: |
-            *   Administered a regional data center providing critical services including email, file sharing, LDAP, and VoIP.
+            *   Administered a regional data center providing critical services including email, file sharing, LDAP, and VoIP 📞.
             *   Managed an infrastructure based on <mark>Dell PowerEdge</mark> servers and <mark>Xen Server</mark> virtualization.
 
       - layout: left
@@ -179,39 +179,34 @@ content:
           First experience with remote Linux servers and wireless networks.
         description: |
             *   Gained foundational Linux system administration skills by co-managing a community web and mail server.
-            *   Pioneered one of the first local community wireless networks, experimenting with <mark>IPtables</mark>, split DNS, and <mark>WDS</mark>.
+            *   Pioneered one of the first local community wireless networks, experimenting with <mark>IPtables</mark>, split DNS, and <mark>WDS</mark> ց.
 
 
-  - title: A Little More About Me
+  - title: ✨ A Little More About Me
     layout: text
     content: |
-      Alongside my interests in IT, some of my other interests and hobbies are:
-      - Traveling
-      - Hiking
-      - Podcasts
+      Beyond IT, my interests include traveling ✈️, hiking ⛰️, and listening to podcasts 🎧.
 
-      Location:
-      - <mark>Country:</mark> Bosnia & Herzegovina.
-      - <mark>Homey town:</mark> Zenica.
-      - <mark>Current city:</mark> Sarajevo.
-      - <mark>Current location:</mark> Jakarta.
+      **Location:**
+      *   Originally from Zenica, Bosnia & Herzegovina 🇧🇦.
+      *   Currently based in Jakarta 🇮🇩, with a home base in Sarajevo.
 
-  - title: Certification
+  - title: 🎓 Certification
     layout: text
     content: |
       [![AWS Certified Cloud Practitioner](./images/certificates/aws_certified_cloud_practitioner.png "AWS Certified Cloud Practitioner")](https://www.credly.com/badges/3ea2d9b2-538e-448c-a923-f2c11afcbbf8)
       [![LPI Linux Essentials](./images/certificates/lpi_essentials.png "LPI Linux Essentials")](https://www.credly.com/badges/d316ae48-fb20-4014-8b5c-9d1845edd90c)
 
-  - title: Publications
+  - title: 📚 Publications
     layout: text
     content: |
       [![Read About AWS While Your Coffee Brews](./images/publications/cover_book_Read-About-AWS-While-Your-Coffee-Brews_small.jpg "Read About AWS While Your Coffee Brews")](https://github.com/neidiom/Read-About-AWS-While-Your-Coffee-Brews)
       [![Master Linux Permissions and File Types While Your Coffee Brews](./images/publications/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Master_Linux_Permissions_While_Your_Coffee_Brews)
 
-  - title: Scripts
+  - title: 📜 Scripts
     layout: text
     content: |
-      These are some of the public scripts I wrote.
+      A selection of my public scripts:
       - [monit2slack](https://github.com/inservio/monit2slack)
       - [Dockerized SSL certificate notification](https://github.com/neidiom/dockerized_ssl_certificate_expiry_notification)
 #      - [Zmcli](https://github.com/inservio/zmcli)
