@@ -5,4 +5,4 @@ css_file="_site/assets/main.css"
 
 
 
-pandoc "${input_file}" -o "${output_file}" --pdf-engine=pdflatex --css "${css_file}"
+pandoc "${input_file}" -o "${output_file}" --pdf-engine=xelatex --css "${css_file}" -H pdf_style.tex

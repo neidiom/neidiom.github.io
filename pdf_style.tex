@@ -1,0 +1,39 @@
+
+\usepackage{fontspec}
+\setmainfont{Lato-Regular}
+\setsansfont{Lato-Regular}
+\newfontfamily{\lightfont}{Lato-Light}
+
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{007BFF}
+\definecolor{secondary}{HTML}{6c757d}
+\definecolor{text}{HTML}{212529}
+\definecolor{subtleblue}{HTML}{E6F2FF}
+\definecolor{lightgray}{HTML}{F8F9FA}
+
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=2cm,
+  right=2cm,
+  top=2.5cm,
+  bottom=2.5cm
+}
+
+\usepackage{sectsty}
+\sectionfont{\color{primary}\bfseries\Large}
+\subsectionfont{\color{primary}\bfseries\large}
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{1em}{}[\titlerule]
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=primary
+}
+
+\renewcommand{\hl}[1]{{\color{primary}#1}}
+
+\renewenvironment{quote}{\begin{quote}}{\end{quote}}
