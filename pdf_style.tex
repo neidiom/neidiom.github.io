@@ -1,11 +1,15 @@
 
 \usepackage{fontspec}
-\usepackage{unicode-math}
-\usepackage{ucharclasses}
-\setmainfont{Lato-Regular}
-\setsansfont{Lato-Regular}
-\newfontfamily{\lightfont}{Lato-Light}
-\newfontfamily{\emojifont}{DejaVu Sans}
+\setmainfont{Roboto}
+\setsansfont{Roboto}
+\newfontfamily{\lightfont}{Roboto Light}
+\linespread{1.22}
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0.5em}
+\usepackage{moresize}
+
+
+
 
 
 
@@ -13,35 +17,33 @@
 
 
 \usepackage{xcolor}
-\definecolor{primary}{HTML}{007BFF}
-\definecolor{secondary}{HTML}{6c757d}
-\definecolor{text}{HTML}{212529}
-\definecolor{subtleblue}{HTML}{E6F2FF}
-\definecolor{lightgray}{HTML}{F8F9FA}
+\definecolor{sectcol}{RGB}{255,150,0}
+\definecolor{bgcol}{RGB}{110,110,110}
+\definecolor{softcol}{RGB}{225,225,225}
 
 \usepackage{geometry}
 \geometry{
   a4paper,
-  left=2cm,
-  right=2cm,
-  top=2.5cm,
-  bottom=2.5cm
+  left=1.5cm,
+  right=1.5cm,
+  top=1.75cm,
+  bottom=0.6cm
 }
 
 \usepackage{sectsty}
-\sectionfont{\color{primary}\bfseries\Large}
-\subsectionfont{\color{primary}\bfseries\large}
+\sectionfont{\color{sectcol}\bfseries\Large}
+\subsectionfont{\color{sectcol}\bfseries\large}
 
 \usepackage{titlesec}
-\titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{1em}{}[\titlerule]
+\titleformat{\section}{\HUGE\bfseries\color{sectcol}}{\thesection}{1em}{}[\titlerule\vspace{1em}]
 
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
-  linkcolor=primary,
-  urlcolor=primary
+  linkcolor=sectcol,
+  urlcolor=sectcol
 }
 
-\renewcommand{\hl}[1]{{\color{primary}#1}}
+\renewcommand{\hl}[1]{{\color{sectcol}#1}}
 
 \renewenvironment{quote}{\begin{quote}}{\end{quote}}
