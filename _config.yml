@@ -50,20 +50,20 @@ linkedin_username: neidiom
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Greetings! 👋 I'm Nedim, a DevOps engineer with nearly two decades of experience. My expertise lies in Linux server administration and automating cloud systems.
+  I'm Nedim, a DevOps engineer with nearly two decades of experience. My expertise lies in Linux server administration and automating cloud systems.
 
   I am most skilled in the following:
-  *  Terraform  Terraform,
-  * Ansible 📜,
-  * AWS Cloud ☁️ and,
-  * anything Linux 🐧.
+  * Terraform,
+  * Ansible,
+  * AWS Cloud and,
+  * Linux System Administration.
 
-  I love writing scripts in Ruby 💎 and Python 🐍.
+  I love writing scripts in Ruby and Python.
 
   I recently started the IT certification path, for more info visit [![Credly Profile](./images/credly.png "Credly Profile")](https://www.credly.com/users/nedim-hadzimahmutovic).
 
 content:
-  - title: 🚀 Latest Projects
+  - title: Latest Projects
     layout: list
     content:
       - layout: top-middle
@@ -80,11 +80,11 @@ content:
           *   Authoring various <mark>AWS Lambda</mark> functions for automation (e.g., Slack notifications, MySQL backups, service management).
 
           **Tech Summary:**
-          *   **Languages:** <mark>Golang</mark> 🐹
-          *   **Frontend:** <mark>React</mark> ⚛️
-          *   **Cloud Provider:** <mark>AWS</mark> ☁️
+          *   **Languages:** <mark>Golang</mark>
+          *   **Frontend:** <mark>React</mark>
+          *   **Cloud Provider:** <mark>AWS</mark>
           *   **AWS Services:** <mark>AppRunner</mark>, <mark>CodePipeline</mark>, <mark>S3</mark>, <mark>CloudFront</mark>, <mark>Parameter Store</mark>, <mark>Lambda</mark>
-          *   **Tools:** <mark>Docker</mark> 🐳, <mark>Terraform</mark>  Terraform
+          *   **Tools:** <mark>Docker</mark>, <mark>Terraform</mark>
 
       - layout: top-middle
         title: 'InvestDEFY: Ansible-powered HashiCorp Nomad implementation at a Crypto startup'
@@ -98,7 +98,7 @@ content:
           *   Building a staging <mark>Jenkins</mark> server using the configuration-as-code plugin, integrating with <mark>Makefiles</mark> and <mark>Jenkinsfiles</mark> for CI/CD.
 
           **Tech Summary:**
-          *   **Languages:** <mark>Golang</mark> 🐹
+          *   **Languages:** <mark>Golang</mark>
           *   **Config Management:** <mark>Ansible</mark> 📜
           *   **CI/CD:** <mark>Jenkins</mark> 🤵 (with config-as-code), <mark>Makefiles</mark>, <mark>Jenkinsfiles</mark>
           *   **Containerization:** <mark>Docker</mark> 🐳, <mark>HashiCorp Nomad</mark> 🗺️
@@ -113,7 +113,7 @@ content:
    #
    #
 
-  - title: 💼 Experience
+  - title: Experience
     layout: list
     content:
 
@@ -183,7 +183,7 @@ content:
             *   Pioneered one of the first local community wireless networks, experimenting with <mark>IPtables</mark>, split DNS, and <mark>WDS</mark> ց.
 
 
-  - title: ✨ A Little More About Me
+  - title: A Little More About Me
     layout: text
     content: |
       Beyond IT, my interests include traveling ✈️, hiking ⛰️, and listening to podcasts 🎧.
@@ -192,19 +192,19 @@ content:
       *   Originally from Zenica, Bosnia & Herzegovina 🇧🇦.
       *   Currently based in Jakarta 🇮🇩, with a home base in Sarajevo.
 
-  - title: 🎓 Certification
+  - title: Certifications
     layout: text
     content: |
       [![AWS Certified Cloud Practitioner](./images/certificates/aws_certified_cloud_practitioner.png "AWS Certified Cloud Practitioner")](https://www.credly.com/badges/3ea2d9b2-538e-448c-a923-f2c11afcbbf8)
       [![LPI Linux Essentials](./images/certificates/lpi_essentials.png "LPI Linux Essentials")](https://www.credly.com/badges/d316ae48-fb20-4014-8b5c-9d1845edd90c)
 
-  - title: 📚 Publications
+  - title: Publications
     layout: text
     content: |
       [![Read About AWS While Your Coffee Brews](./images/publications/cover_book_Read-About-AWS-While-Your-Coffee-Brews_small.jpg "Read About AWS While Your Coffee Brews")](https://github.com/neidiom/Read-About-AWS-While-Your-Coffee-Brews)
       [![Master Linux Permissions and File Types While Your Coffee Brews](./images/publications/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Master_Linux_Permissions_While_Your_Coffee_Brews)
 
-  - title: 📜 Scripts
+  - title: Open Source Scripts
     layout: text
     content: |
       A selection of my public scripts:
