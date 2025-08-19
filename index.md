@@ -1,7 +1,7 @@
 ---
 #
-# Clean Portfolio - Modern, minimal design
-# Optimized for performance and accessibility
+# CV 2025 - Ultra Modern Resume Design
+# Clean, White, Minimal, Professional
 #
-layout: clean-portfolio
+layout: cv-2025
 ---
