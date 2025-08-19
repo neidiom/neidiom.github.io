@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description | default: site.title }}">
+  
+  <title>{{ site.name }} - {{ site.title }}</title>
+  
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Modern Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide@latest/font/lucide.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}">
+</head>
+
+<body class="resume-onepage">
+  
+  <!-- Quick Actions Bar -->
+  <div class="quick-actions">
+    <div class="actions-inner">
+      <button onclick="window.print()" class="action-btn" aria-label="Print">
+        <i class="fas fa-print"></i>
+        <span>Print</span>
+      </button>
+      <a href="{{ '/resume.pdf' | relative_url }}" class="action-btn" download aria-label="Download PDF">
+        <i class="fas fa-download"></i>
+        <span>PDF</span>
+      </a>
+      <button onclick="toggleTheme()" class="action-btn" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+        <span>Theme</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Resume Container -->
+  <div class="resume-container">
+    <div class="resume-page">
+      
+      <!-- Header Section -->
+      <header class="resume-header">
+        <div class="header-wrapper">
+          {% if site.about_profile_image %}
+          <div class="header-photo">
+            <img src="{{ site.about_profile_image | relative_url }}" alt="{{ site.name }}" class="profile-photo">
+          </div>
+          {% endif %}
+          
+          <div class="header-info">
+            <div class="header-main">
+              <h1 class="name">{{ site.name }}</h1>
+              <p class="title">{{ site.title }}</p>
+              <p class="tagline">{{ site.about_content | strip_html | truncate: 100 }}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="header-contact">
+          <div class="contact-row">
+            <a href="mailto:{{ site.email }}" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>{{ site.email }}</span>
+            </a>
+            <a href="tel:+1234567890" class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+1 (234) 567-890</span>
+            </a>
+          </div>
+          <div class="contact-row">
+            <a href="https://github.com/{{ site.github_username }}" class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>github.com/{{ site.github_username }}</span>
+            </a>
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/{{ site.linkedin_username }}</span>
+            </a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Remote / Global</span>
+            </span>
+            <a href="{{ site.website }}" class="contact-item">
+              <i class="fas fa-globe"></i>
+              <span>{{ site.website | remove: 'https://' | remove: 'http://' }}</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content Grid -->
+      <div class="resume-content">
+        
+        <!-- Left Column -->
+        <div class="content-left">
+          
+          <!-- Professional Summary -->
+          <section class="resume-section">
+            <h2 class="section-title">
+              <i class="fas fa-user"></i>
+              <span>Professional Summary</span>
+            </h2>
+            <div class="summary-content">
+              <p>{{ site.about_content | strip_html | truncate: 250 }}</p>
+            </div>
+          </section>
+
+          <!-- Experience -->
+          <section class="resume-section">
+            <h2 class="section-title">
+              <i class="fas fa-briefcase"></i>
+              <span>Experience</span>
+            </h2>
+            
+            <div class="experience-list">
+              {% for item in site.content %}
+                {% if item.title == "Experience" %}
+                  {% for exp in item.content limit:3 %}
+                  <div class="experience-item">
+                    <div class="exp-header">
+                      <div class="exp-title">
+                        <h3>{{ exp.sub_title }}</h3>
+                        <span class="company">{{ exp.title }}</span>
+                      </div>
+                      <span class="exp-date">{{ exp.caption }}</span>
+                    </div>
+                    <div class="exp-content">
+                      {{ exp.description | strip_html | truncate: 150 }}
+                    </div>
+                  </div>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </section>
+
+          <!-- Key Projects -->
+          <section class="resume-section">
+            <h2 class="section-title">
+              <i class="fas fa-rocket"></i>
+              <span>Key Projects</span>
+            </h2>
+            
+            <div class="projects-list">
+              {% for item in site.content %}
+                {% if item.title contains "Projects" %}
+                  {% for project in item.content limit:2 %}
+                  <div class="project-item">
+                    <h3>{{ project.title | truncate: 40 }}</h3>
+                    <p>{{ project.description | strip_html | truncate: 100 }}</p>
+                    <div class="project-tech">
+                      <span>Terraform</span>
+                      <span>AWS</span>
+                      <span>Docker</span>
+                    </div>
+                  </div>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="content-right">
+          
+          <!-- Core Skills -->
+          <section class="resume-section">
+            <h2 class="section-title">
+              <i class="fas fa-tools"></i>
+              <span>Core Skills</span>
+            </h2>
+            
+            <div class="skills-compact">
+              <div class="skill-category">
+                <h4>Cloud Platforms</h4>
+                <div class="skill-list">
+                  <span>AWS</span>
+                  <span>GCP</span>
+                  <span>Azure</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4>DevOps Tools</h4>
+                <div class="skill-list">
+                  <span>Terraform</span>
+                  <span>Ansible</span>
+                  <span>Docker</span>
+                  <span>Kubernetes</span>
+                  <span>Jenkins</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Languages</h4>
+                <div class="skill-list">
+                  <span>Python</span>
+                  <span>Ruby</span>
+                  <span>Golang</span>
+                  <span>Bash</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Systems</h4>
+                <div class="skill-list">
+                  <span>Linux</span>
+                  <span>PostgreSQL</span>
+                  <span>Redis</span>
+                  <span>Nginx</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Certifications -->
+          <section class="resume-section">
+            <h2 class="section-title">
+              <i class="fas fa-certificate"></i>
+              <span>Certifications</span>
+            </h2>
+            
+            <div class="certifications-list">
+              <div class="cert-item">
+                <i class="fas fa-award"></i>
+                <div>
+                  <h4>AWS Certified Cloud Practitioner</h4>
+                  <span>Amazon Web Services - 2024</span>
+                </div>
+              </div>
+              
+              <div class="cert-item">
+                <i class="fas fa-award"></i>
+                <div>
+                  <h4>LPI Linux Essentials</h4>
+                  <span>Linux Professional Institute - 2024</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Education -->
+          <section class="resume-section">
+            <h2 class="section-title">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Education</span>
+            </h2>
+            
+            <div class="education-list">
+              <div class="edu-item">
+                <h4>Bachelor of Computer Science</h4>
+                <span>University Name</span>
+                <span class="edu-date">2000 - 2004</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Languages -->
+          <section class="resume-section">
+            <h2 class="section-title">
+              <i class="fas fa-language"></i>
+              <span>Languages</span>
+            </h2>
+            
+            <div class="languages-list">
+              <div class="lang-item">
+                <span>English</span>
+                <div class="lang-level">
+                  <span class="level-dot active"></span>
+                  <span class="level-dot active"></span>
+                  <span class="level-dot active"></span>
+                  <span class="level-dot active"></span>
+                  <span class="level-dot active"></span>
+                </div>
+              </div>
+              <div class="lang-item">
+                <span>Bosnian</span>
+                <div class="lang-level">
+                  <span class="level-dot active"></span>
+                  <span class="level-dot active"></span>
+                  <span class="level-dot active"></span>
+                  <span class="level-dot active"></span>
+                  <span class="level-dot active"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="resume-footer">
+        <p>References available upon request • Portfolio at {{ site.website }}</p>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Theme Toggle
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+      const icon = document.querySelector('.action-btn i.fa-moon, .action-btn i.fa-sun');
+      if (icon) {
+        icon.classList.toggle('fa-moon');
+        icon.classList.toggle('fa-sun');
+      }
+      localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+    }
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-theme');
+      const icon = document.querySelector('.action-btn i.fa-moon');
+      if (icon) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      }
+    }
+
+    // Print optimization
+    window.addEventListener('beforeprint', () => {
+      document.body.classList.add('printing');
+    });
+
+    window.addEventListener('afterprint', () => {
+      document.body.classList.remove('printing');
+    });
+  </script>
+</body>
+</html>
