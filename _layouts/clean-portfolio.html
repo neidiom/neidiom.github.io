@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description | default: site.title }}">
+  
+  <title>{{ site.name }} | {{ site.title }}</title>
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}">
+</head>
+
+<body class="clean-portfolio">
+  <!-- Skip to content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  
+  <!-- Header Navigation -->
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="#home" class="nav-brand">
+          <span class="brand-name">{{ site.name | split: ' ' | first }}</span>
+          <span class="brand-dot">.</span>
+        </a>
+        
+        <ul class="nav-menu" role="list">
+          <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="main" role="main">
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">Hi, my name is</p>
+            <h1 id="hero-title" class="hero-title">{{ site.name }}</h1>
+            <h2 class="hero-subtitle">{{ site.title }}</h2>
+            <p class="hero-description">
+              {{ site.about_content | strip_html | truncate: 200 }}
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">
+                <span>Get In Touch</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="{{ '/resume.pdf' | relative_url }}" class="btn btn-secondary" download>
+                <i class="fas fa-download"></i>
+                <span>Resume</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="hero-shape">
+              <img src="{{ site.about_profile_image | relative_url }}" alt="{{ site.name }}" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="about-title" class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </header>
+        
+        <div class="about-content">
+          <div class="about-text">
+            {{ site.about_content | markdownify }}
+          </div>
+          
+          <div class="about-services">
+            <h3 class="services-title">What I Do</h3>
+            <div class="services-grid">
+              <article class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <h4>Cloud Architecture</h4>
+                <p>Designing scalable cloud solutions on AWS, GCP, and Azure</p>
+              </article>
+              
+              <article class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h4>DevOps & CI/CD</h4>
+                <p>Implementing automated pipelines and infrastructure as code</p>
+              </article>
+              
+              <article class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h4>System Administration</h4>
+                <p>Managing Linux servers, containers, and orchestration</p>
+              </article>
+              
+              <article class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h4>Automation Scripts</h4>
+                <p>Writing efficient scripts in Python, Ruby, and Bash</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="experience-title" class="section-title">Experience</h2>
+          <p class="section-subtitle">My professional journey</p>
+        </header>
+        
+        <div class="timeline">
+          {% for item in site.content %}
+            {% if item.title == "Experience" %}
+              {% for exp in item.content %}
+              <article class="timeline-item">
+                <div class="timeline-date">
+                  <span>{{ exp.caption }}</span>
+                </div>
+                <div class="timeline-content">
+                  <h3>{{ exp.sub_title }}</h3>
+                  <h4>{{ exp.title }}</h4>
+                  <div class="timeline-description">
+                    {{ exp.description | markdownify }}
+                  </div>
+                </div>
+              </article>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="projects-title" class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some things I've built</p>
+        </header>
+        
+        <div class="projects-grid">
+          {% for item in site.content %}
+            {% if item.title contains "Projects" %}
+              {% for project in item.content %}
+              <article class="project-card">
+                <div class="project-header">
+                  <div class="project-icon">
+                    <i class="fas fa-folder"></i>
+                  </div>
+                  <div class="project-links">
+                    {% if project.link %}
+                    <a href="{{ project.link }}" target="_blank" rel="noopener" aria-label="External link">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    {% endif %}
+                    {% if project.github %}
+                    <a href="{{ project.github }}" target="_blank" rel="noopener" aria-label="GitHub">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    {% endif %}
+                  </div>
+                </div>
+                <h3 class="project-title">{{ project.title }}</h3>
+                <p class="project-description">{{ project.description | strip_html | truncate: 150 }}</p>
+                <ul class="project-tech">
+                  <li>Terraform</li>
+                  <li>AWS</li>
+                  <li>Docker</li>
+                </ul>
+              </article>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+          
+          <!-- Additional Projects -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-folder"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Infrastructure Automation</h3>
+            <p class="project-description">Collection of automation scripts and infrastructure as code templates for cloud deployments</p>
+            <ul class="project-tech">
+              <li>Python</li>
+              <li>Ansible</li>
+              <li>CI/CD</li>
+            </ul>
+          </article>
+          
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-folder"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Monitoring Stack</h3>
+            <p class="project-description">Complete monitoring solution with Prometheus, Grafana, and custom alerting</p>
+            <ul class="project-tech">
+              <li>Prometheus</li>
+              <li>Grafana</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="skills-title" class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Tools and technologies I work with</p>
+        </header>
+        
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+            <ul class="skill-list">
+              <li>Amazon Web Services (AWS)</li>
+              <li>Google Cloud Platform</li>
+              <li>Microsoft Azure</li>
+              <li>DigitalOcean</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> DevOps Tools</h3>
+            <ul class="skill-list">
+              <li>Terraform</li>
+              <li>Ansible</li>
+              <li>Docker & Kubernetes</li>
+              <li>Jenkins / GitLab CI</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Languages</h3>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>Ruby</li>
+              <li>Golang</li>
+              <li>Bash / Shell</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i> Systems</h3>
+            <ul class="skill-list">
+              <li>Linux Administration</li>
+              <li>Nginx / Apache</li>
+              <li>MySQL / PostgreSQL</li>
+              <li>Redis / Elasticsearch</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
+        </header>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <a href="mailto:{{ site.email }}" class="contact-card">
+              <i class="fas fa-envelope"></i>
+              <span>{{ site.email }}</span>
+            </a>
+            
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" class="contact-card">
+              <i class="fab fa-github"></i>
+              <span>github.com/{{ site.github_username }}</span>
+            </a>
+            
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" class="contact-card">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/{{ site.linkedin_username }}</span>
+            </a>
+          </div>
+          
+          <div class="contact-cta">
+            <p>I'm currently available for freelance work and interesting projects.</p>
+            <a href="mailto:{{ site.email }}" class="btn btn-primary btn-large">
+              <span>Say Hello</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.name }}. Built with Jekyll.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script>
+    // Navigation
+    const nav = document.querySelector('.nav');
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Mobile menu toggle
+    navToggle.addEventListener('click', () => {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isOpen);
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+    
+    // Smooth scrolling and active link
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile menu
+          navMenu.classList.remove('active');
+          navToggle.classList.remove('active');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+    
+    // Active section highlighting
+    const sections = document.querySelectorAll('section[id]');
+    
+    function highlightNav() {
+      const scrollY = window.pageYOffset;
+      
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+        
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          navLinks.forEach(link => link.classList.remove('active'));
+          if (navLink) navLink.classList.add('active');
+        }
+      });
+      
+      // Add shadow to nav on scroll
+      if (scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    }
+    
+    window.addEventListener('scroll', highlightNav);
+    
+    // Back to top button
+    const backToTop = document.querySelector('.back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    // Add animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all sections and cards
+    document.querySelectorAll('section, .timeline-item, .project-card, .service-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

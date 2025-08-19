@@ -1,7 +1,7 @@
 ---
 #
-# Leven-inspired single page portfolio layout
-# This creates a modern, single-page scrolling portfolio
+# Clean Portfolio - Modern, minimal design
+# Optimized for performance and accessibility
 #
-layout: leven
+layout: clean-portfolio
 ---
