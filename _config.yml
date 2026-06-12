@@ -10,6 +10,7 @@ version: 2
 # Personal info
 name: Nedim Hadzimahmutovic
 title: Senior DevOps Engineer
+description: Nedim Hadzimahmutovic — Senior DevOps Engineer with 20 years of experience in AWS, Terraform, Ansible, and Linux infrastructure.
 email: h.nedim@gmail.com
 website: https://blog.nedtechie.com
 
@@ -23,11 +24,11 @@ linkedin_username: neidiom
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  DevOps engineer with 20 years of hands-on experience designing, building, and managing production infrastructure — from bare metal data centers to cloud-native platforms on AWS, Azure, and GCP. I've provisioned 1,000+ cloud resources, managed 50+ servers, and built CI/CD pipelines and monitoring systems across healthcare, fintech, entertainment, government, and managed hosting.
+  DevOps engineer with 20 years of hands-on experience designing, building, and managing production infrastructure — from bare metal data centers to cloud-native platforms on AWS, Azure, and GCP. Built CI/CD pipelines, monitoring systems, and event-driven automation across healthcare, fintech, entertainment, government, and managed hosting.
 
   **Infrastructure:** <mark>Terraform</mark>, <mark>Ansible</mark>, <mark>AWS</mark>, <mark>AWS ECS</mark>, <mark>Docker</mark>, <mark>Kubernetes</mark>, <mark>Linux</mark>. **Languages:** <mark>Python</mark>, <mark>Ruby</mark>, <mark>Golang</mark>, <mark>Bash</mark>.
 
-  Currently pursuing advanced certifications — see my [![Credly Profile](./images/credly.png "Credly Profile")](https://www.credly.com/users/nedim-hadzimahmutovic) profile.
+  Based in Sarajevo, Bosnia & Herzegovina. Currently pursuing IT certifications — see my [![Credly Profile](./images/credly.png "Credly Profile")](https://www.credly.com/users/nedim-hadzimahmutovic) profile.
 
 content:
   - title: Projects
@@ -36,7 +37,7 @@ content:
       - layout: top-middle
         title: ProperHealth
         description: |
-          Cloud infrastructure for a healthcare SaaS platform with AI-powered health coaching.
+          Cloud infrastructure for a healthcare SaaS platform with AI-powered health coaching. *Client project at Clearview.*
           *   Provisioned 600+ AWS resources using <mark>Terraform</mark> across development and production environments.
           *   Orchestrated containerized microservices on <mark>AWS ECS</mark> Fargate including API, web admin, AI pipelines, and a medical RAG service.
           *   Managed <mark>RDS PostgreSQL</mark> with automated backups, encryption, and deletion protection.
@@ -47,7 +48,7 @@ content:
       - layout: top-middle
         title: ASIFA Hollywood
         description: |
-          Production infrastructure for the Annie Awards platform — managing awards ceremonies, member portals, and video streaming.
+          Production infrastructure for the Annie Awards platform — managing awards ceremonies, member portals, and video streaming. *Client project at Clearview.*
           *   Managed 140+ <mark>Terraform</mark> files across production and staging environments with VPC peering.
           *   Deployed containerized services on <mark>AWS ECS</mark> Fargate with <mark>CodePipeline</mark> CI/CD and GitHub tag-based triggers.
           *   Configured 15+ <mark>CloudFront</mark> distributions for video streaming (HLS), submissions, and static assets.
@@ -58,7 +59,7 @@ content:
       - layout: top-middle
         title: Loop Platform
         description: |
-          Full-stack audience and community engagement platform built from the ground up.
+          Full-stack audience and community engagement platform built from the ground up. *Client project at Clearview.*
           *   Developed the backend API with <mark>Golang</mark>, packaged in <mark>Docker</mark> containers.
           *   Built the frontend with <mark>React</mark>.
           *   Automated infrastructure provisioning using <mark>Terraform</mark>.
@@ -69,7 +70,7 @@ content:
       - layout: top-middle
         title: InvestDEFY
         description: |
-          DevOps infrastructure for a crypto startup running on bare metal servers.
+          DevOps infrastructure for a crypto startup running on bare metal servers. *Client project at Clearview.*
           *   Refactored a large <mark>Ansible</mark> codebase with 50+ custom roles, splitting staging and production inventories.
           *   Deployed data mining services onto a <mark>HashiCorp Nomad</mark> cluster.
           *   Containerized multiple <mark>Golang</mark> services using <mark>Docker</mark>.
@@ -84,11 +85,12 @@ content:
         sub_title: DevOps Engineer
         caption: 2017 - 2025
         description: |
-            US IT outsourcing company. Managed infrastructure across bare metal, <mark>AWS</mark>, and <mark>GCP</mark>.
-            *   Maintained and improved monitoring, logging, and backup solutions across multiple client projects.
+            US IT outsourcing company. Managed infrastructure for multiple client projects across <mark>AWS</mark> and <mark>GCP</mark>.
+            *   Led infrastructure for client projects including ProperHealth (healthcare SaaS) and ASIFA Hollywood (Annie Awards platform).
             *   Collaborated with development teams to define technology stacks and resolve infrastructure challenges.
+            *   Built monitoring and alerting with <mark>CloudWatch</mark> alarms, <mark>EventBridge</mark> automation, and Slack notifications.
             *   Used <mark>Terraform</mark> for cloud automation and <mark>Ansible</mark> for bare-metal server configuration.
-            *   Bootstrapped <mark>AWS EC2</mark> instances with <mark>cloud-init</mark>.
+            *   Managed CI/CD pipelines with <mark>CodePipeline</mark> and bootstrapped <mark>AWS EC2</mark> instances with <mark>cloud-init</mark>.
 
       - layout: left
         title: BAWAG P.S.K.
@@ -104,10 +106,10 @@ content:
         sub_title: Linux System Administrator / DevOps Engineer
         caption: 2009 - 2021
         description: |
-            Managed hosting provider (concurrent with other roles).
-            *   Administered web hosting on <mark>Hetzner</mark> dedicated servers running <mark>Proxmox VE</mark>.
-            *   Isolated services using <mark>LXC containers</mark> with <mark>Debian Linux</mark>, deployed with custom <mark>Ansible</mark> roles.
-            *   Architected solutions for high-traffic web portals.
+            Managed hosting provider serving 100+ clients on 10+ dedicated servers (concurrent with other roles).
+            *   Administered <mark>Hetzner</mark> dedicated servers running <mark>Proxmox VE</mark>, isolating clients into individual <mark>LXC containers</mark> on <mark>Debian Linux</mark>.
+            *   Deployed and configured services with custom <mark>Ansible</mark> roles.
+            *   Architected high-traffic news portals using <mark>Nginx</mark> and <mark>Varnish</mark> caching.
             *   Managed <mark>WordPress</mark> instances via <mark>WP-CLI</mark> and built automation scripts in <mark>Ruby</mark>.
 
       - layout: left
@@ -142,36 +144,29 @@ content:
       [![AWS Certified Cloud Practitioner](./images/certificates/aws_certified_cloud_practitioner.png "AWS Certified Cloud Practitioner")](https://www.credly.com/badges/3ea2d9b2-538e-448c-a923-f2c11afcbbf8)
       [![LPI Linux Essentials](./images/certificates/lpi_essentials.png "LPI Linux Essentials")](https://www.credly.com/badges/d316ae48-fb20-4014-8b5c-9d1845edd90c)
 
-  - title: Publications
+  - title: Publications & Open Source
     layout: text
     content: |
       [![Master Linux Permissions and File Types While Your Coffee Brews](./images/publications/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://blog.nedtechie.com/posts/master_linux_permissions_and_file_types_while_your_coffee_brews/)
 
-      - [An Event-Driven Architecture Case Study: Lessons from a Real-World Application](https://drive.google.com/file/d/1F3mOTKY91DwKj7qQjOxIX9gAZIHKgA2q/view) — AWS EventBridge, Lambda, and SQS in production
-
-  - title: Open Source
-    layout: text
-    content: |
+      - [An Event-Driven Architecture Case Study](https://drive.google.com/file/d/1F3mOTKY91DwKj7qQjOxIX9gAZIHKgA2q/view) — AWS EventBridge, Lambda, and SQS in production
       - [monit2slack](https://github.com/inservio/monit2slack) — Monit alerts to Slack
       - [Dockerized SSL certificate notification](https://github.com/neidiom/dockerized_ssl_certificate_expiry_notification) — SSL expiry alerts in Docker
-
-  - title: About Me
-    layout: text
-    content: |
-      Based in Sarajevo, Bosnia & Herzegovina. Previously lived in Jakarta and Bali. Married and a father of one.
-
-      Outside of work, I enjoy traveling, hiking, and listening to podcasts.
 
 # Footer
 footer_show_references: true
 references_title: References available upon request
 
 # Build settings
-remote_theme: sproogen/resume-theme
-
 sass:
   sass_dir: _sass
   style: compressed
 
 plugins:
  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
