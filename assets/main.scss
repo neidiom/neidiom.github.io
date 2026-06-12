@@ -2,28 +2,14 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import "modern-resume-theme";
-@import "resume-onepage";
+@use "resume-onepage";
 
-// Reset conflicting base styles when using resume-onepage layout
+// Reset any inherited base styles
 .resume-onepage {
-  // Override any theme defaults
   * { box-sizing: border-box; }
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
     &::before, &::after { display: none; }
-  }
-
-  // Disable theme containers
-  .page-content,
-  .wrapper,
-  .header-container,
-  .intro-container,
-  .list-container,
-  .text-container,
-  .footer-container {
-    all: unset;
-    display: block;
   }
 }
