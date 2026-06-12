@@ -20,17 +20,13 @@
 
   <!-- Header -->
   <header class="site-header">
+    <div class="header-glow"></div>
     <div class="header-inner">
-      <div class="header-identity">
-        {% if site.about_profile_image %}
-        <img src="{{ site.about_profile_image | relative_url }}" alt="{{ site.name }}" class="avatar">
-        {% endif %}
-        <div class="header-text">
-          <h1>{{ site.name }}</h1>
-          <p class="role">{{ site.title }}</p>
-        </div>
-      </div>
-
+      {% if site.about_profile_image %}
+      <img src="{{ site.about_profile_image | relative_url }}" alt="{{ site.name }}" class="avatar">
+      {% endif %}
+      <h1>{{ site.name }}</h1>
+      <p class="role">{{ site.title }}</p>
       <nav class="contact-bar" aria-label="Contact links">
         {% if site.email %}
         <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i><span>{{ site.email }}</span></a>
@@ -60,13 +56,14 @@
     {% endif %}
 
     {% for section in site.content %}
-    <section class="section" id="{{ section.title | slugify }}">
+    <section class="section {% if section.title == 'Experience' %}section--timeline{% endif %}" id="{{ section.title | slugify }}">
       <h2 class="section-heading">{{ section.title }}</h2>
 
       {% if section.layout == "list" %}
-      <div class="entries">
+      <div class="entries {% if section.title == 'Experience' %}entries--timeline{% endif %}">
         {% for item in section.content %}
         <article class="entry">
+          {% if section.title == 'Experience' %}<div class="timeline-dot"></div>{% endif %}
           <div class="entry-header">
             <div class="entry-meta">
               <h3 class="entry-title">
@@ -77,7 +74,6 @@
             </div>
             {% if item.caption %}<time class="entry-date">{{ item.caption }}</time>{% endif %}
           </div>
-          {% if item.quote %}<blockquote class="entry-quote">{{ item.quote }}</blockquote>{% endif %}
           {% if item.description %}
           <div class="entry-body">{{ item.description | markdownify }}</div>
           {% endif %}
@@ -99,8 +95,6 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <span>&copy; {{ 'now' | date: "%Y" }} {{ site.name }}</span>
-      <span class="footer-sep">&middot;</span>
-      <span>Built with Jekyll</span>
     </div>
   </footer>
 

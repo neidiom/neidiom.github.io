@@ -23,16 +23,38 @@ linkedin_username: neidiom
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  DevOps engineer with nearly 20 years of experience building and managing infrastructure across bare metal, private cloud, and public cloud environments. Specialized in automating cloud systems on AWS, Azure, and GCP using Terraform and Ansible. Experienced across industries including fintech, crypto, government, and managed hosting.
+  DevOps engineer with 20 years of hands-on experience designing, building, and managing production infrastructure — from bare metal data centers to cloud-native platforms on AWS, Azure, and GCP. I've provisioned 1,000+ cloud resources, managed 50+ servers, and built CI/CD pipelines and monitoring systems across healthcare, fintech, entertainment, government, and managed hosting.
 
-  Core expertise: <mark>Terraform</mark>, <mark>Ansible</mark>, <mark>AWS</mark>, <mark>AWS ECS</mark>, <mark>Docker</mark>, <mark>Kubernetes</mark>, <mark>Linux</mark>, <mark>Python</mark>, <mark>Ruby</mark>, <mark>Golang</mark>.
+  **Infrastructure:** <mark>Terraform</mark>, <mark>Ansible</mark>, <mark>AWS</mark>, <mark>AWS ECS</mark>, <mark>Docker</mark>, <mark>Kubernetes</mark>, <mark>Linux</mark>. **Languages:** <mark>Python</mark>, <mark>Ruby</mark>, <mark>Golang</mark>, <mark>Bash</mark>.
 
-  Currently pursuing IT certifications — see my [![Credly Profile](./images/credly.png "Credly Profile")](https://www.credly.com/users/nedim-hadzimahmutovic) profile.
+  Currently pursuing advanced certifications — see my [![Credly Profile](./images/credly.png "Credly Profile")](https://www.credly.com/users/nedim-hadzimahmutovic) profile.
 
 content:
   - title: Projects
     layout: list
     content:
+      - layout: top-middle
+        title: ProperHealth
+        description: |
+          Cloud infrastructure for a healthcare SaaS platform with AI-powered health coaching.
+          *   Provisioned 600+ AWS resources using <mark>Terraform</mark> across development and production environments.
+          *   Orchestrated containerized microservices on <mark>AWS ECS</mark> Fargate including API, web admin, AI pipelines, and a medical RAG service.
+          *   Managed <mark>RDS PostgreSQL</mark> with automated backups, encryption, and deletion protection.
+          *   Built 77+ <mark>CloudWatch</mark> alarms and composite alarms for ECS, RDS, ALB, and EC2 monitoring.
+          *   Implemented <mark>Lambda</mark>-based CI/CD automation for zero-downtime deployments across 8+ services.
+          *   Configured VPC with public/private subnet isolation, <mark>Parameter Store</mark> for secrets, and IAM role separation per service.
+
+      - layout: top-middle
+        title: ASIFA Hollywood
+        description: |
+          Production infrastructure for the Annie Awards platform — managing awards ceremonies, member portals, and video streaming.
+          *   Managed 140+ <mark>Terraform</mark> files across production and staging environments with VPC peering.
+          *   Deployed containerized services on <mark>AWS ECS</mark> Fargate with <mark>CodePipeline</mark> CI/CD and GitHub tag-based triggers.
+          *   Configured 15+ <mark>CloudFront</mark> distributions for video streaming (HLS), submissions, and static assets.
+          *   Built event-driven automation with <mark>EventBridge</mark> (10+ schedulers) routing to <mark>Lambda</mark> and Slack notifications.
+          *   Authored <mark>Ruby</mark> and <mark>Python</mark> scripts for EC2 cost optimization, CloudWatch-to-Slack alerts, and operational tasks.
+          *   Managed <mark>RDS MariaDB</mark>, 17+ S3 buckets, and multi-domain DNS with <mark>Route 53</mark>.
+
       - layout: top-middle
         title: Loop Platform
         description: |
@@ -123,7 +145,9 @@ content:
   - title: Publications
     layout: text
     content: |
-      [![Master Linux Permissions and File Types While Your Coffee Brews](./images/publications/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://nedtechie.gumroad.com/l/Master_Linux_Permissions_While_Your_Coffee_Brews)
+      [![Master Linux Permissions and File Types While Your Coffee Brews](./images/publications/linux_permissions_small_book_cover.jpg "Master Linux Permissions and File Types While Your Coffee Brews")](https://blog.nedtechie.com/posts/master_linux_permissions_and_file_types_while_your_coffee_brews/)
+
+      - [An Event-Driven Architecture Case Study: Lessons from a Real-World Application](https://drive.google.com/file/d/1F3mOTKY91DwKj7qQjOxIX9gAZIHKgA2q/view) — AWS EventBridge, Lambda, and SQS in production
 
   - title: Open Source
     layout: text
@@ -134,7 +158,7 @@ content:
   - title: About Me
     layout: text
     content: |
-      Based in Sarajevo, Bosnia & Herzegovina. Previously lived in Jakarta and Bali.
+      Based in Sarajevo, Bosnia & Herzegovina. Previously lived in Jakarta and Bali. Married and a father of one.
 
       Outside of work, I enjoy traveling, hiking, and listening to podcasts.
 
