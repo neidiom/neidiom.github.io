@@ -541,34 +541,88 @@ h1, h2, h3, h4 {
 // RESPONSIVE
 // =====================
 
-@media (max-width: 680px) {
+// ---- Tablet (≤ 768px) ----
+
+@media (max-width: 768px) {
   .header-inner {
-    padding: $sp-12 $sp-5 $sp-8;
+    padding: $sp-12 $sp-6 $sp-10;
   }
 
   .header-inner > h1 {
-    font-size: 1.75rem;
-  }
-
-  .avatar {
-    width: 80px;
-    height: 80px;
-  }
-
-  .contact-bar {
-    padding: $sp-1 $sp-2;
-    border-radius: $r-md;
-
-    a {
-      padding: $sp-1 $sp-2;
-
-      span { display: none; }
-      i { font-size: 0.9rem; }
-    }
+    font-size: 2rem;
   }
 
   .site-main {
-    padding: $sp-2 $sp-5 $sp-12;
+    padding: $sp-4 $sp-6 $sp-12;
+  }
+
+  .about-body {
+    padding: $sp-5 $sp-6;
+  }
+
+  .entry {
+    padding: $sp-5;
+  }
+
+  .text-body img {
+    height: 110px;
+  }
+}
+
+// ---- Mobile (≤ 480px) ----
+
+@media (max-width: 480px) {
+  .resume-onepage {
+    font-size: 14px;
+  }
+
+  // Header
+  .header-inner {
+    padding: $sp-10 $sp-4 $sp-8;
+  }
+
+  .header-glow {
+    width: 300px;
+    height: 250px;
+    top: -80px;
+  }
+
+  .avatar {
+    width: 72px;
+    height: 72px;
+    margin-bottom: $sp-4;
+    box-shadow: 0 0 0 4px rgba($accent, 0.1),
+                0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  .header-inner > h1 {
+    font-size: 1.5rem;
+    letter-spacing: -0.03em;
+  }
+
+  .role {
+    font-size: 0.7rem;
+    margin-bottom: $sp-6;
+  }
+
+  .contact-bar {
+    border-radius: $r-md;
+    padding: $sp-2;
+    gap: $sp-1;
+
+    a {
+      padding: $sp-2 $sp-3;
+      border-radius: $r-sm;
+      font-size: 0.75rem;
+      gap: $sp-2;
+      // Show icons + labels on mobile for clarity
+      i { font-size: 0.75rem; }
+    }
+  }
+
+  // Main content
+  .site-main {
+    padding: $sp-2 $sp-4 $sp-10;
   }
 
   .section {
@@ -578,15 +632,31 @@ h1, h2, h3, h4 {
 
   .section-heading {
     font-size: 1.1rem;
+    gap: $sp-2;
+
+    &::before {
+      width: 3px;
+      height: 16px;
+    }
   }
 
+  // About
   .about-body {
-    padding: $sp-5;
+    padding: $sp-4;
     border-radius: $r-md;
+    font-size: 0.9rem;
+    line-height: 1.75;
+
+    mark {
+      font-size: 0.78rem;
+      padding: 1px $sp-2;
+    }
   }
 
+  // Entries
   .entry {
-    padding: $sp-4 $sp-4 $sp-4 $sp-5;
+    padding: $sp-4;
+    border-radius: $r-sm;
   }
 
   .entry-header {
@@ -596,33 +666,155 @@ h1, h2, h3, h4 {
 
   .entry-date {
     align-self: flex-start;
+    margin-top: $sp-1;
   }
 
+  .entry-title {
+    font-size: 0.95rem;
+  }
+
+  .entry-body {
+    font-size: 0.82rem;
+    margin-top: $sp-3;
+
+    ul { padding-left: $sp-4; }
+
+    mark {
+      white-space: normal;
+      font-size: 0.78rem;
+    }
+  }
+
+  // Timeline
   .entries--timeline {
-    padding-left: 20px;
+    padding-left: 18px;
 
     &::before {
-      left: 5px;
+      left: 4px;
     }
 
     .timeline-dot {
-      left: -20px;
+      left: -18px;
+      top: $sp-5;
       width: 12px;
       height: 12px;
+      border-width: 2px;
     }
   }
 
+  // Text sections
+  .text-body {
+    font-size: 0.88rem;
+
+    img {
+      height: 85px;
+      margin: $sp-1 $sp-2 $sp-1 0;
+      border-radius: $r-sm;
+    }
+
+    ul li {
+      padding: $sp-3 $sp-3;
+      font-size: 0.84rem;
+      gap: $sp-2;
+
+      // Wrap long link text
+      a { word-break: break-word; }
+    }
+  }
+
+  // Footer
+  .footer-inner {
+    padding: $sp-4;
+  }
+}
+
+// ---- Small phones (≤ 360px) ----
+
+@media (max-width: 360px) {
+  .header-inner > h1 {
+    font-size: 1.3rem;
+  }
+
+  .contact-bar a {
+    padding: $sp-1 $sp-2;
+    font-size: 0.7rem;
+  }
+
+  .site-main {
+    padding: $sp-1 $sp-3 $sp-8;
+  }
+
+  .about-body {
+    padding: $sp-3;
+  }
+
+  .entry {
+    padding: $sp-3;
+  }
+
   .text-body img {
-    height: 90px;
-    margin: $sp-1 $sp-2 $sp-1 0;
+    height: 70px;
+  }
+}
+
+// ---- Touch targets ----
+
+@media (hover: none) and (pointer: coarse) {
+  .contact-bar a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
   }
 
   .text-body ul li {
-    padding: $sp-3 $sp-4;
+    min-height: 44px;
   }
 
-  .footer-inner {
-    padding: $sp-5;
+  // Disable hover effects on touch
+  .entry:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: $ink-faint;
+  }
+
+  .entries--timeline .entry:hover .timeline-dot {
+    border-color: $accent-mid;
+    background: $surface;
+    box-shadow: none;
+  }
+
+  .text-body ul li:hover {
+    transform: none;
+    background: $surface;
+    border-color: $ink-faint;
+  }
+
+  .about-body mark:hover {
+    background: $accent-light;
+    color: $accent-dark;
+    transform: none;
+  }
+
+  .text-body img:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+}
+
+// ---- Prefer reduced motion ----
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .section {
+    animation: none;
+  }
+
+  .header-glow {
+    animation: none;
+  }
+
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
   }
 }
 
